@@ -1,12 +1,14 @@
 {
   "source_repository": "jaewonlee021111/arduino-mall",
   "target_repository": "jaewonlee021111/physical-ai-learning",
-  "layout": "learning content at repository root",
-  "prepared": true,
-  "python_tests_passed": 21,
-  "javascript_tests_passed": 4,
-  "creation_status": "created, upload prepared",
-  "existing_files_removed": false,
   "url": "https://github.com/jaewonlee021111/physical-ai-learning",
-  "initial_commit": "049683f2dcddd35703550c41cb04af8fa8ae9f1f"
+  "layout": "learning content at repository root",
+  "status": "completed",
+  "published_files": 310,
+  "upload_commit": "60c1d06c7dc3a738ed19d4ba6c78bab9d73a3fed",
+  "source_cleanup_commit": "3b2a22cbca6c0269a2915f89fc3073996827192e",
+  "existing_learning_folder_removed": true,
+  "source_app_files_preserved": true,
+  "python_tests_passed": 21,
+  "javascript_tests_passed": 4
 }
