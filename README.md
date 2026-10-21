@@ -55,7 +55,7 @@ python examples/advanced_concepts.py D03
 | 기초 오류 수정 활동 | 18개 × 4종, 72개 파일 실행 |
 | 심화 활동 | 18개 실행 |
 | 데이터 결과 파일 | 24개 검사 |
-| 개념 예제 | C01~C17·D01~D12 실행 |
+| 개념 예제 | C01–C17 · D01–D12 실행 |
 | Git | 실제 로컬 저장소에서 명령 27개 실행 |
 | MCP | stdio 초기화·도구 목록·문서 읽기·허용 목록 검사, Notion 개인 문서 생성·실제 읽기 |
 | 웹 | HTML·React 필터·폼, 모바일 메뉴·Escape·가로 넘침 확인, Vite 빌드 성공 |
@@ -78,3 +78,4 @@ python examples/advanced_concepts.py D03
 ## 출처
 
 [공식 교육 사이트](https://zeusk302-png.github.io/kdigital-physical-ai/)의 10월 21일까지 공개된 6개 날짜를 기준으로 했습니다. 날짜 사이 공백이 휴강이라는 뜻은 아닙니다. 활동 명세는 [curriculum.json](curriculum.json), 원본 실습 입력과 새 풀이의 구분은 [ATTRIBUTION](ATTRIBUTION.md)에 기록했습니다. 10월 22일 이후 진도는 포함하지 않습니다.
+
