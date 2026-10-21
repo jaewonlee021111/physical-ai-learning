@@ -1,0 +1,4 @@
+[
+  {"sensor_id": "S01", "temperature_c": 0, "active": false},
+  {"sensor_id": "S02", "temperature_c": null, "active": true}
+]

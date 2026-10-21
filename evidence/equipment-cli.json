@@ -1,0 +1,6 @@
+{
+  "file": "projects/equipment-loan/app.py",
+  "returncode": 0,
+  "stdout": "장비 ID | 이름 | 전체 | 남은 수량\nCAM01 | 카메라 | 2 | 1\nMIC01 | 마이크 | 3 | 3\nKIT01 | 센서 키트 | 4 | 0\n",
+  "stderr": ""
+}

@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-21T10:28:17.290203+00:00",
+  "python": "3.12.14",
+  "unit_suites": [
+    {
+      "directory": "tests",
+      "count": 15,
+      "success": true,
+      "log": "test_all_official_basic_examples (test_assignments.AssignmentTest.test_all_official_basic_examples) ... ok\ntest_bad_shape_settings_preserve_existing_output (test_assignments.AssignmentTest.test_bad_shape_settings_preserve_existing_output) ... ok\ntest_bad_state_file_preserved (test_assignments.AssignmentTest.test_bad_state_file_preserved) ... ok\ntest_basic_seat_failed_operations_preserve_state (test_assignments.AssignmentTest.test_basic_seat_failed_operations_preserve_state) ... ok\ntest_measurements_errors_negative_and_equal_threshold (test_assignments.AssignmentTest.test_measurements_errors_negative_and_equal_threshold) ... ok\ntest_persistent_seats_two_separate_processes (test_assignments.AssignmentTest.test_persistent_seats_two_separate_processes) ... ok\ntest_sensor_missing_header_preserves_report (test_assignments.AssignmentTest.test_sensor_missing_header_preserves_report) ... ok\ntest_sensor_official_report (test_assignments.AssignmentTest.test_sensor_official_report) ... ok\ntest_sensor_validation_order_and_reuse_after_failed_row (test_assignments.AssignmentTest.test_sensor_validation_order_and_reuse_after_failed_row) ... ok\ntest_shape_both_types_all_required_heights (test_assignments.AssignmentTest.test_shape_both_types_all_required_heights) ... ok\ntest_tree_retries_and_upper_boundary (test_assignments.AssignmentTest.test_tree_retries_and_upper_boundary) ... ok\ntest_empty_and_bad_csv (test_examples.ExamplesTest.test_empty_and_bad_csv) ... ok\ntest_missing_invalid_and_boundaries (test_examples.ExamplesTest.test_missing_invalid_and_boundaries) ... ok\ntest_round_trip_and_identifier (test_examples.ExamplesTest.test_round_trip_and_identifier) ... ok\ntest_tree_shape (test_examples.ExamplesTest.test_tree_shape) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 1.050s\n\nOK\n"
+    },
+    {
+      "directory": "projects/equipment-loan",
+      "count": 6,
+      "success": true,
+      "log": "test_borrow_return_and_original (test_inventory.InventoryTest.test_borrow_return_and_original) ... ok\ntest_duplicate_id (test_inventory.InventoryTest.test_duplicate_id) ... ok\ntest_empty_stock_and_over_return (test_inventory.InventoryTest.test_empty_stock_and_over_return) ... ok\ntest_invalid_data (test_inventory.InventoryTest.test_invalid_data) ... ok\ntest_missing_selection (test_inventory.InventoryTest.test_missing_selection) ... ok\ntest_persistence_and_corruption_preservation (test_inventory.InventoryTest.test_persistence_and_corruption_preservation) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.002s\n\nOK\n"
+    }
+  ],
+  "python_test_count": 21,
+  "debug_activity_count": 18,
+  "debug_script_runs": 72,
+  "advanced_activity_count": 18,
+  "data_outputs_checked": 24,
+  "concept_examples": {
+    "basic": 17,
+    "advanced": 12
+  },
+  "original_inputs_unchanged": true,
+  "commands": [
+    {
+      "file": "assignments/advanced/AH01_shapes.py",
+      "returncode": 0,
+      "stdout": "도형 저장 완료\n",
+      "stderr": ""
+    },
+    {
+      "file": "assignments/advanced/AH03_sensor_report.py",
+      "returncode": 0,
+      "stdout": "입력 6 / 정상 3 / 오류 3\n",
+      "stderr": ""
+    },
+    {
+      "file": "scripts/git_practice.py",
+      "returncode": 0,
+      "stdout": "Git 실제 작업 27개 완료\n",
+      "stderr": ""
+    },
+    {
+      "file": "mcp/client_demo.py",
+      "returncode": 0,
+      "stdout": "MCP 초기화·도구 목록·실제 파일 읽기·허용 목록 검증 성공\n",
+      "stderr": ""
+    }
+  ],
+  "result": "passed",
+  "external_pending": [
+    "Notion actual authorized page read",
+    "human team review",
+    "user PC GitHub Desktop installation/login"
+  ],
+  "integration_status_update": {
+    "notion_remote_private_document_read": "succeeded; see notion-connection.json"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "source": "missing_readings.csv",
+  "total": 2,
+  "accepted": 2,
+  "missing": 2,
+  "numeric": 0,
+  "issue_count": 0,
+  "average": null
+}

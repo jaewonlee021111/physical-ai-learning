@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+node_modules/
+.openai/
+web/site-dist/
+output/
+assignments/advanced/work/seats.json

@@ -1,0 +1,19 @@
+{
+  "result": "passed",
+  "context": "standalone repository preparation",
+  "files": [
+    {
+      "path": "web/react/dist/index.html",
+      "sha256": "fa6e52ecf1b192804ba71e5fe85d5f6cae75aa4af6ff8ecae1a66fbdddf0f44c"
+    },
+    {
+      "path": "web/react/dist/assets/index-CBlwMwxp.js",
+      "sha256": "a5db4a1bc12ae336d63c144cc639aab100bcba41c453572881656deb90be109b"
+    },
+    {
+      "path": "web/react/dist/assets/index-BjS_JZK_.css",
+      "sha256": "bc8cf754025bb50b0f9c9ed927069aca823dee178abaccb0215b9d3a404f960d"
+    }
+  ],
+  "javascript_tests_passed": 4
+}

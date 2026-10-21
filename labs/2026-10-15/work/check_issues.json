@@ -1,0 +1,14 @@
+[
+  {
+    "line": 6,
+    "sensor_id": "S05",
+    "raw": "뜨거움",
+    "reason": "could not convert string to float: '뜨거움'"
+  },
+  {
+    "line": 7,
+    "sensor_id": "S06",
+    "raw": "51.0",
+    "reason": "범위 오류"
+  }
+]

@@ -1,0 +1,319 @@
+{
+  "scope": "isolated local Git and bare remote, not a human peer review",
+  "steps": [
+    {
+      "command": [
+        "git",
+        "init",
+        "-b",
+        "main"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "Initialized empty Git repository in <TEMP>/first/.git/\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "config",
+        "user.name",
+        "Physical AI local practice"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "config",
+        "user.email",
+        "practice@example.invalid"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "add",
+        "README.md"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "commit",
+        "-m",
+        "initial practice"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "[main (root-commit) 5a24f84] initial practice\n 1 file changed, 1 insertion(+)\n create mode 100644 README.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "switch",
+        "-c",
+        "feature"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Switched to a new branch 'feature'\n"
+    },
+    {
+      "command": [
+        "git",
+        "add",
+        "README.md"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "commit",
+        "-m",
+        "feature change"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "[feature 746c45e] feature change\n 1 file changed, 1 insertion(+), 1 deletion(-)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "switch",
+        "main"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Switched to branch 'main'\n"
+    },
+    {
+      "command": [
+        "git",
+        "diff"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "diff --git a/README.md b/README.md\nindex df967b9..065e9d1 100644\n--- a/README.md\n+++ b/README.md\n@@ -1 +1 @@\n-base\n+main change\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "add",
+        "README.md"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "diff --git a/README.md b/README.md\nindex df967b9..065e9d1 100644\n--- a/README.md\n+++ b/README.md\n@@ -1 +1 @@\n-base\n+main change\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "commit",
+        "-m",
+        "main change"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "[main 414b103] main change\n 1 file changed, 1 insertion(+), 1 deletion(-)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "merge",
+        "feature"
+      ],
+      "cwd": "first",
+      "returncode": 1,
+      "stdout": "Auto-merging README.md\nCONFLICT (content): Merge conflict in README.md\nAutomatic merge failed; fix conflicts and then commit the result.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "add",
+        "README.md"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "commit",
+        "-m",
+        "resolve conflict"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "[main 32e9350] resolve conflict\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "init",
+        "--bare",
+        "--initial-branch=main",
+        "<TEMP>/remote.git"
+      ],
+      "cwd": "tmpvl1tv9wx",
+      "returncode": 0,
+      "stdout": "Initialized empty Git repository in <TEMP>/remote.git/\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "remote",
+        "add",
+        "origin",
+        "<TEMP>/remote.git"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "-u",
+        "origin",
+        "main"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "branch 'main' set up to track 'origin/main'.\n",
+      "stderr": "To <TEMP>/remote.git\n * [new branch]      main -> main\n"
+    },
+    {
+      "command": [
+        "git",
+        "clone",
+        "<TEMP>/remote.git",
+        "<TEMP>/second"
+      ],
+      "cwd": "tmpvl1tv9wx",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Cloning into '<TEMP>/second'...\ndone.\n"
+    },
+    {
+      "command": [
+        "git",
+        "add",
+        "CHANGELOG.md"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "commit",
+        "-m",
+        "add changelog"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "[main 33760b5] add changelog\n 1 file changed, 1 insertion(+)\n create mode 100644 CHANGELOG.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "push"
+      ],
+      "cwd": "first",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "To <TEMP>/remote.git\n   32e9350..33760b5  main -> main\n"
+    },
+    {
+      "command": [
+        "git",
+        "fetch",
+        "origin"
+      ],
+      "cwd": "second",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "From <TEMP>/remote\n   32e9350..33760b5  main       -> origin/main\n"
+    },
+    {
+      "command": [
+        "git",
+        "pull",
+        "--ff-only"
+      ],
+      "cwd": "second",
+      "returncode": 0,
+      "stdout": "Updating 32e9350..33760b5\nFast-forward\n CHANGELOG.md | 1 +\n 1 file changed, 1 insertion(+)\n create mode 100644 CHANGELOG.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "log",
+        "--oneline",
+        "--graph",
+        "--all"
+      ],
+      "cwd": "second",
+      "returncode": 0,
+      "stdout": "* 33760b5 add changelog\n*   32e9350 resolve conflict\n|\\  \n| * 746c45e feature change\n* | 414b103 main change\n|/  \n* 5a24f84 initial practice\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "cwd": "second",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "result": "passed"
+}

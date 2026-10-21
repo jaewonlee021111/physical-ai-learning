@@ -1,0 +1,169 @@
+{
+  "D01": {
+    "returned": 23.5
+  },
+  "D02": {
+    "default": 4,
+    "keyword": 9,
+    "outer_unchanged": 10
+  },
+  "D03": {
+    "original_after_shallow_edit": [
+      {
+        "readings": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "independent_deep_copy": [
+      {
+        "readings": [
+          1,
+          2,
+          4
+        ]
+      }
+    ]
+  },
+  "D04": {
+    "enumerate": [
+      [
+        1,
+        "camera"
+      ],
+      [
+        2,
+        "mic"
+      ],
+      [
+        3,
+        "kit"
+      ]
+    ],
+    "zip": [
+      [
+        "camera",
+        2
+      ],
+      [
+        "mic",
+        3
+      ]
+    ],
+    "length_mismatch": true
+  },
+  "D05": [
+    {
+      "raw": "22.5",
+      "value": 22.5,
+      "error": null
+    },
+    {
+      "raw": "",
+      "value": null,
+      "error": null
+    },
+    {
+      "raw": "0",
+      "value": 0.0,
+      "error": null
+    },
+    {
+      "raw": "bad",
+      "value": null,
+      "error": "잘못된 숫자"
+    },
+    {
+      "raw": "NaN",
+      "value": null,
+      "error": "잘못된 숫자"
+    }
+  ],
+  "D06": {
+    "rows": 3,
+    "first_value_type": "str"
+  },
+  "D07": {
+    "csv_round_trip": true,
+    "identifier": "001"
+  },
+  "D08": {
+    "json_round_trip": true,
+    "records": [
+      {
+        "id": "001",
+        "area": "A",
+        "value": 22.5,
+        "active": true
+      },
+      {
+        "id": "002",
+        "area": "A",
+        "value": 0.0,
+        "active": true
+      },
+      {
+        "id": "003",
+        "area": "B",
+        "value": null,
+        "active": true
+      }
+    ]
+  },
+  "D09": {
+    "accepted": [
+      {
+        "id": "001"
+      },
+      {
+        "id": "002"
+      }
+    ],
+    "issues": [
+      "번호 누락",
+      "번호 중복"
+    ]
+  },
+  "D10": {
+    "A": {
+      "count": 2,
+      "sum": 22.5,
+      "average": 11.25
+    },
+    "B": {
+      "count": 0,
+      "sum": 0,
+      "average": null
+    }
+  },
+  "D11": {
+    "imported_module": "sensor_pipeline",
+    "imported_result": [
+      0.0,
+      "정상"
+    ]
+  },
+  "D12": {
+    "flow": [
+      "CSV 읽기",
+      "변환",
+      "누락/중복 검사",
+      "구역 집계",
+      "JSON 저장"
+    ],
+    "report": {
+      "A": {
+        "count": 2,
+        "sum": 22.5,
+        "average": 11.25
+      },
+      "B": {
+        "count": 0,
+        "sum": 0,
+        "average": null
+      }
+    }
+  }
+}

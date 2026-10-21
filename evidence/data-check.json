@@ -1,0 +1,135 @@
+[
+  {
+    "file": "labs/2026-10-08/work/A13_extra.csv",
+    "columns": 5,
+    "records": 7,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A13_fixed.csv",
+    "columns": 5,
+    "records": 5,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A14_extra.csv",
+    "columns": 4,
+    "records": 4,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A14_fixed.csv",
+    "columns": 4,
+    "records": 3,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A15_extra.csv",
+    "columns": 3,
+    "records": 6,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A15_fixed.csv",
+    "columns": 3,
+    "records": 4,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A16_extra.csv",
+    "columns": 3,
+    "records": 3,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A16_fixed.csv",
+    "columns": 3,
+    "records": 2,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A20_fixed.csv",
+    "columns": 3,
+    "records": 2,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A22_fixed.csv",
+    "columns": 5,
+    "records": 6,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A23_fixed.csv",
+    "columns": 5,
+    "records": 6,
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A17_extra.json",
+    "root_type": "dict",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A17_fixed.json",
+    "root_type": "dict",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A18_extra.json",
+    "root_type": "dict",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A18_fixed.json",
+    "root_type": "dict",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A19_extra.json",
+    "root_type": "dict",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A19_fixed.json",
+    "root_type": "dict",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A20_extra.json",
+    "root_type": "list",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A22_all.json",
+    "root_type": "list",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A22_extra.json",
+    "root_type": "list",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A22_fixed.json",
+    "root_type": "list",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A23_fixed.json",
+    "root_type": "list",
+    "valid": true
+  },
+  {
+    "file": "labs/2026-10-08/work/A07_types.py",
+    "returncode": 0,
+    "stdout": "002 str\n22.5 float\nTrue bool\n2026-10-08 str\n22 int\n22.5 str\n",
+    "stderr": ""
+  },
+  {
+    "file": "labs/2026-10-08/work/A11_structures.py",
+    "returncode": 0,
+    "stdout": "22.5\n23.5\n3\nS01\n26.0\n",
+    "stderr": ""
+  }
+]

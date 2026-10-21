@@ -1,0 +1,488 @@
+[
+  {
+    "activity": "A01",
+    "normal": {
+      "file": "labs/2026-10-14/work/A01_normal.py",
+      "returncode": 0,
+      "stdout": "입고\n검사\n출고\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A01_broken.py",
+      "returncode": 0,
+      "stdout": "출고\n입고\n검사\n",
+      "stderr": ""
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A01_fixed.py",
+      "returncode": 0,
+      "stdout": "입고\n검사\n출고\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A01_extra.py",
+      "returncode": 0,
+      "stdout": "입고\n검사\n포장\n출고\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A02",
+    "normal": {
+      "file": "labs/2026-10-14/work/A02_normal.py",
+      "returncode": 0,
+      "stdout": "점검 시작\nS01 22.5\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A02_broken.py",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "  File \"<REPOSITORY>/labs/2026-10-14/work/A02_broken.py\", line 1\n    print(\"점검 시작)\n          ^\nSyntaxError: unterminated string literal (detected at line 1)\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A02_fixed.py",
+      "returncode": 0,
+      "stdout": "점검 시작\nS01 22.5\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A02_extra.py",
+      "returncode": 0,
+      "stdout": "오늘의 점검\nS01 24.0\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A03",
+    "normal": {
+      "file": "labs/2026-10-14/work/A03_normal.py",
+      "returncode": 0,
+      "stdout": "오늘의 점검\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A03_broken.py",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A03_fixed.py",
+      "returncode": 0,
+      "stdout": "오늘의 점검\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A03_extra.py",
+      "returncode": 0,
+      "stdout": "이재원\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A04",
+    "normal": {
+      "file": "labs/2026-10-14/work/A04_normal.py",
+      "returncode": 0,
+      "stdout": "입구\nlocation\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A04_broken.py",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<REPOSITORY>/labs/2026-10-14/work/A04_broken.py\", line 2, in <module>\n    print(Location)\n          ^^^^^^^^\nNameError: name 'Location' is not defined. Did you mean: 'location'?\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A04_fixed.py",
+      "returncode": 0,
+      "stdout": "입구\nlocation\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A04_extra.py",
+      "returncode": 0,
+      "stdout": "입구\nplace\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A05",
+    "normal": {
+      "file": "labs/2026-10-14/work/A05_normal.py",
+      "returncode": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A05_broken.py",
+      "returncode": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A05_fixed.py",
+      "returncode": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A05_extra.py",
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A06",
+    "normal": {
+      "file": "labs/2026-10-14/work/A06_normal.py",
+      "returncode": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A06_broken.py",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<REPOSITORY>/labs/2026-10-14/work/A06_broken.py\", line 1, in <module>\n    print(count)\n          ^^^^^\nNameError: name 'count' is not defined. Did you mean: 'round'?\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A06_fixed.py",
+      "returncode": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A06_extra.py",
+      "returncode": 0,
+      "stdout": "2000 3\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A07",
+    "normal": {
+      "file": "labs/2026-10-14/work/A07_normal.py",
+      "returncode": 0,
+      "stdout": "5\n32\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A07_broken.py",
+      "returncode": 1,
+      "stdout": "5\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<REPOSITORY>/labs/2026-10-14/work/A07_broken.py\", line 4, in <module>\n    print(text_count + 2)\n          ~~~~~~~~~~~^~~\nTypeError: can only concatenate str (not \"int\") to str\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A07_fixed.py",
+      "returncode": 0,
+      "stdout": "5\n32\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A07_extra.py",
+      "returncode": 0,
+      "stdout": "34\n7\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A08",
+    "normal": {
+      "file": "labs/2026-10-14/work/A08_normal.py",
+      "returncode": 0,
+      "stdout": "23.5\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A08_broken.py",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<REPOSITORY>/labs/2026-10-14/work/A08_broken.py\", line 2, in <module>\n    temperature_c = float(raw)\n                    ^^^^^^^^^^\nValueError: could not convert string to float: '22.5도'\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A08_fixed.py",
+      "returncode": 0,
+      "stdout": "23.5\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A08_extra.py",
+      "returncode": 0,
+      "stdout": "25.0\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A09",
+    "normal": {
+      "file": "labs/2026-10-14/work/A09_normal.py",
+      "returncode": 0,
+      "stdout": "22.0\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A09_broken.py",
+      "returncode": 0,
+      "stdout": "32.0\n",
+      "stderr": ""
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A09_fixed.py",
+      "returncode": 0,
+      "stdout": "22.0\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A09_extra.py",
+      "returncode": 0,
+      "stdout": "22.0\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A10",
+    "normal": {
+      "file": "labs/2026-10-14/work/A10_normal.py",
+      "returncode": 0,
+      "stdout": "True\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A10_broken.py",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<REPOSITORY>/labs/2026-10-14/work/A10_broken.py\", line 2, in <module>\n    print(temperature_c = 24.0)\nTypeError: 'temperature_c' is an invalid keyword argument for print()\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A10_fixed.py",
+      "returncode": 0,
+      "stdout": "True\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A10_extra.py",
+      "returncode": 0,
+      "stdout": "False\nTrue\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A11",
+    "normal": {
+      "file": "labs/2026-10-14/work/A11_normal.py",
+      "returncode": 0,
+      "stdout": "확인\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A11_broken.py",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "  File \"<REPOSITORY>/labs/2026-10-14/work/A11_broken.py\", line 2\n    if temperature_c > 24.0\n                           ^\nSyntaxError: expected ':'\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A11_fixed.py",
+      "returncode": 0,
+      "stdout": "확인\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A11_extra.py",
+      "returncode": 0,
+      "stdout": "정상\n정상\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A12",
+    "normal": {
+      "file": "labs/2026-10-14/work/A12_normal.py",
+      "returncode": 0,
+      "stdout": "확인\n담당자에게 알림\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A12_broken.py",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "  File \"<REPOSITORY>/labs/2026-10-14/work/A12_broken.py\", line 3\n    print(\"확인\")\n    ^^^^^\nIndentationError: expected an indented block after 'if' statement on line 2\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A12_fixed.py",
+      "returncode": 0,
+      "stdout": "확인\n담당자에게 알림\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A12_extra.py",
+      "returncode": 0,
+      "stdout": "정상\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A13",
+    "normal": {
+      "file": "labs/2026-10-14/work/A13_normal.py",
+      "returncode": 0,
+      "stdout": "22.5\n23.5\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A13_broken.py",
+      "returncode": 1,
+      "stdout": "22.5\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<REPOSITORY>/labs/2026-10-14/work/A13_broken.py\", line 3, in <module>\n    print(temperatures[3])\n          ~~~~~~~~~~~~^^^\nIndexError: list index out of range\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A13_fixed.py",
+      "returncode": 0,
+      "stdout": "22.5\n23.5\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A13_extra.py",
+      "returncode": 0,
+      "stdout": "3 25.0\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A14",
+    "normal": {
+      "file": "labs/2026-10-14/work/A14_normal.py",
+      "returncode": 0,
+      "stdout": "22.5\n24.0\n23.5\n완료\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A14_broken.py",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "  File \"<REPOSITORY>/labs/2026-10-14/work/A14_broken.py\", line 2\n    for temperature_c In temperatures:\n                      ^^\nSyntaxError: invalid syntax\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A14_fixed.py",
+      "returncode": 0,
+      "stdout": "22.5\n24.0\n23.5\n완료\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A14_extra.py",
+      "returncode": 0,
+      "stdout": "23.5\n25.0\n24.5\n완료\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A15",
+    "normal": {
+      "file": "labs/2026-10-14/work/A15_normal.py",
+      "returncode": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A15_broken.py",
+      "returncode": 0,
+      "stdout": "1\n",
+      "stderr": ""
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A15_fixed.py",
+      "returncode": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A15_extra.py",
+      "returncode": 0,
+      "stdout": "현재 개수 0\n현재 개수 0\n현재 개수 1\n1\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A16",
+    "normal": {
+      "file": "labs/2026-10-14/work/A16_normal.py",
+      "returncode": 0,
+      "stdout": "S01\n22.5\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A16_broken.py",
+      "returncode": 1,
+      "stdout": "S01\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<REPOSITORY>/labs/2026-10-14/work/A16_broken.py\", line 3, in <module>\n    print(record[\"temperature\"])\n          ~~~~~~^^^^^^^^^^^^^^^\nKeyError: 'temperature'\n"
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A16_fixed.py",
+      "returncode": 0,
+      "stdout": "S01\n22.5\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A16_extra.py",
+      "returncode": 0,
+      "stdout": "창고\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A17",
+    "normal": {
+      "file": "labs/2026-10-14/work/A17_normal.py",
+      "returncode": 0,
+      "stdout": "23.0 정상\n24.0 정상\n25.0 확인\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A17_broken.py",
+      "returncode": 0,
+      "stdout": "23.0 정상\n24.0 확인\n25.0 확인\n",
+      "stderr": ""
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A17_fixed.py",
+      "returncode": 0,
+      "stdout": "23.0 정상\n24.0 정상\n25.0 확인\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A17_extra.py",
+      "returncode": 0,
+      "stdout": "23.0 정상\n24.0 정상\n25.0 정상\n",
+      "stderr": ""
+    }
+  },
+  {
+    "activity": "A18",
+    "normal": {
+      "file": "labs/2026-10-14/work/A18_normal.py",
+      "returncode": 0,
+      "stdout": "6000 무료 배송\n",
+      "stderr": ""
+    },
+    "broken": {
+      "file": "labs/2026-10-14/work/A18_broken.py",
+      "returncode": 0,
+      "stdout": "2003 배송비 추가\n",
+      "stderr": ""
+    },
+    "fixed": {
+      "file": "labs/2026-10-14/work/A18_fixed.py",
+      "returncode": 0,
+      "stdout": "6000 무료 배송\n",
+      "stderr": ""
+    },
+    "extra": {
+      "file": "labs/2026-10-14/work/A18_extra.py",
+      "returncode": 0,
+      "stdout": "3000 배송비 추가\n",
+      "stderr": ""
+    }
+  }
+]

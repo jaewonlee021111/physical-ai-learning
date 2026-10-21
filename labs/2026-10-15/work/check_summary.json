@@ -1,0 +1,9 @@
+{
+  "source": "bad_readings.csv",
+  "total": 6,
+  "accepted": 4,
+  "missing": 1,
+  "numeric": 3,
+  "issue_count": 2,
+  "average": 15.83
+}

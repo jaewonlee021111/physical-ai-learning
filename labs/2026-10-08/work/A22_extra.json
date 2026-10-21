@@ -1,0 +1,8 @@
+[
+  {"sensor_id": "S01", "location": "입구",
+   "temperature_c": 22.5, "active": true},
+  {"sensor_id": "S02", "location": "창고, 안쪽",
+   "temperature_c": 0, "active": false},
+  {"sensor_id": "S03", "location": "실습실",
+   "temperature_c": null, "active": true}
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "sensor_id": "S01",
+    "location": "입구",
+    "temperature_c": 23.0,
+    "measured_at": "2026-10-08 10:10",
+    "active": true
+  },
+  {
+    "sensor_id": "S02",
+    "location": "창고",
+    "temperature_c": 24.5,
+    "measured_at": "2026-10-08 10:10",
+    "active": true
+  },
+  {
+    "sensor_id": "S03",
+    "location": "실습실",
+    "temperature_c": null,
+    "measured_at": "2026-10-08 10:10",
+    "active": true
+  },
+  {
+    "sensor_id": "S04",
+    "location": "복도",
+    "temperature_c": 0.0,
+    "measured_at": "2026-10-08 10:10",
+    "active": false
+  },
+  {
+    "sensor_id": "S01",
+    "location": "입구",
+    "temperature_c": 23.2,
+    "measured_at": "2026-10-08 10:15",
+    "active": true
+  },
+  {
+    "sensor_id": "S02",
+    "location": "창고",
+    "temperature_c": 24.7,
+    "measured_at": "2026-10-08 10:15",
+    "active": true
+  }
+]

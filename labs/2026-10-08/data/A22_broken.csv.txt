@@ -1,0 +1,4 @@
+sensor_id,location,temperature_c,active
+S01,입구,22.5,true
+S02,창고, 안쪽,0,false
+S03,실습실,0,true

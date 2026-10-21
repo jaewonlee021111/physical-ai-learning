@@ -1,0 +1,83 @@
+{
+  "C01": {
+    "saved_file": "basic_concepts.py",
+    "python": "3.12.14"
+  },
+  "C02": {
+    "print_message": "주석은 실행하지 않고 print는 출력한다."
+  },
+  "C03": {
+    "addition": 5,
+    "division": 3.5,
+    "integer_division": 3,
+    "remainder": 1
+  },
+  "C04": {
+    "stock_after_assignment": 11
+  },
+  "C05": {
+    "formatted": "온도 22.5℃",
+    "concat": "23"
+  },
+  "C06": {
+    "raw_type": "str",
+    "converted": 25
+  },
+  "C07": {
+    "normalized_command": "done"
+  },
+  "C08": {
+    "equal": true,
+    "exceeds": false,
+    "at_least": true
+  },
+  "C09": [
+    "미측정",
+    "정상",
+    "정상",
+    "확인"
+  ],
+  "C10": {
+    "first": 22.5,
+    "last": 23.5,
+    "count": 3
+  },
+  "C11": {
+    "range_1_to_3": [
+      1,
+      2,
+      3
+    ]
+  },
+  "C12": {
+    "sum": 70.0,
+    "count": 3,
+    "average": 23.333333333333332
+  },
+  "C13": {
+    "id_by_key": "S01"
+  },
+  "C14": {
+    "loop_kept": [
+      3
+    ]
+  },
+  "C15": {
+    "caught_error": "ValueError"
+  },
+  "C16": {
+    "return_value": 24.5
+  },
+  "C17": {
+    "count": 4,
+    "measured": 3,
+    "missing": 1,
+    "mean": 15.833333333333334,
+    "status": [
+      "정상",
+      "미측정",
+      "정상",
+      "확인"
+    ]
+  }
+}

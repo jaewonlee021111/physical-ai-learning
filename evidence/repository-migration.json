@@ -1,0 +1,12 @@
+{
+  "source_repository": "jaewonlee021111/arduino-mall",
+  "target_repository": "jaewonlee021111/physical-ai-learning",
+  "layout": "learning content at repository root",
+  "prepared": true,
+  "python_tests_passed": 21,
+  "javascript_tests_passed": 4,
+  "creation_status": "created, upload prepared",
+  "existing_files_removed": false,
+  "url": "https://github.com/jaewonlee021111/physical-ai-learning",
+  "initial_commit": "049683f2dcddd35703550c41cb04af8fa8ae9f1f"
+}

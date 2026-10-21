@@ -1,0 +1,891 @@
+[
+  {
+    "date": "2026-10-08",
+    "topic": "데이터 기초, CSV/JSON",
+    "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-08",
+    "activities": [
+      {
+        "id": "A01",
+        "title": "데이터와 정보: 숫자에 맥락 붙이기",
+        "required": true
+      },
+      {
+        "id": "A02",
+        "title": "수집 방법과 출처·맥락·메타데이터",
+        "required": false
+      },
+      {
+        "id": "A03",
+        "title": "정형·반정형·비정형을 구조로 구분하기",
+        "required": true
+      },
+      {
+        "id": "A04",
+        "title": "같은 관찰을 메모·표·키와 값으로 표현하기",
+        "required": false
+      },
+      {
+        "id": "A05",
+        "title": "범주형과 수치형: 값의 업무상 뜻",
+        "required": true
+      },
+      {
+        "id": "A06",
+        "title": "명목·순서·이산·연속의 차이",
+        "required": false
+      },
+      {
+        "id": "A07",
+        "title": "문자열·정수·실수·불리언 관찰하기",
+        "required": false
+      },
+      {
+        "id": "A08",
+        "title": "값 없음·0·False·문자 0을 구분하기",
+        "required": true
+      },
+      {
+        "id": "A09",
+        "title": "표 한 줄에는 무엇을 기록할까요?",
+        "required": false
+      },
+      {
+        "id": "A10",
+        "title": "기록을 구별하고 항목 설명을 적어 봅시다",
+        "required": true
+      },
+      {
+        "id": "A11",
+        "title": "리스트의 순서와 딕셔너리의 이름표",
+        "required": false
+      },
+      {
+        "id": "A12",
+        "title": "표와 계층: 소개 하나·측정 목록 여러 개",
+        "required": false
+      },
+      {
+        "id": "A13",
+        "title": "주문표를 CSV로 직접 작성하기",
+        "required": true
+      },
+      {
+        "id": "A14",
+        "title": "쉼표와 큰따옴표가 든 메모 고치기",
+        "required": true
+      },
+      {
+        "id": "A15",
+        "title": "형식은 맞지만 잘못된 주문표 찾기",
+        "required": false
+      },
+      {
+        "id": "A16",
+        "title": "다른 구분자의 파일을 CSV로 옮기기",
+        "required": false
+      },
+      {
+        "id": "A17",
+        "title": "JSON 객체에 글자·숫자·상태 넣기",
+        "required": true
+      },
+      {
+        "id": "A18",
+        "title": "중첩 JSON에서 값까지 찾아가기",
+        "required": false
+      },
+      {
+        "id": "A19",
+        "title": "문법 오류와 자료형 오류 고치기",
+        "required": true
+      },
+      {
+        "id": "A20",
+        "title": "CSV를 JSON으로 옮길 때 값의 종류 정하기",
+        "required": false
+      },
+      {
+        "id": "A21",
+        "title": "새 업무 자료의 형태·정보·한계 분류",
+        "required": false
+      },
+      {
+        "id": "A22",
+        "title": "새 센서 기록을 CSV와 JSON으로 함께 작성하기",
+        "required": true
+      },
+      {
+        "id": "A23",
+        "title": "값의 뜻과 표·파일의 모양을 차례로 확인해 봅시다",
+        "required": false
+      },
+      {
+        "id": "A24",
+        "title": "새 상황에 적용하고 결과 설명하기",
+        "required": false
+      }
+    ],
+    "concepts": [],
+    "assignments": []
+  },
+  {
+    "date": "2026-10-14",
+    "topic": "Python 기초",
+    "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-14",
+    "activities": [
+      {
+        "id": "A01",
+        "title": "코드는 위에서 아래로 실행됩니다",
+        "required": false
+      },
+      {
+        "id": "A02",
+        "title": "따옴표와 괄호의 짝 맞추기",
+        "required": true
+      },
+      {
+        "id": "A03",
+        "title": "주석과 실행되는 문장 구별하기",
+        "required": true
+      },
+      {
+        "id": "A04",
+        "title": "변수 이름과 글자 구별하기",
+        "required": true
+      },
+      {
+        "id": "A05",
+        "title": "현재 값으로 재고 갱신하기",
+        "required": false
+      },
+      {
+        "id": "A06",
+        "title": "처음 값을 정한 뒤 사용하기",
+        "required": false
+      },
+      {
+        "id": "A07",
+        "title": "숫자 더하기와 글자 연결하기",
+        "required": true
+      },
+      {
+        "id": "A08",
+        "title": "단위 글자와 숫자 값 분리하기",
+        "required": true
+      },
+      {
+        "id": "A09",
+        "title": "전체 합을 괄호로 묶기",
+        "required": false
+      },
+      {
+        "id": "A10",
+        "title": "대입과 비교 구별하기",
+        "required": false
+      },
+      {
+        "id": "A11",
+        "title": "조건문 끝의 콜론 찾기",
+        "required": true
+      },
+      {
+        "id": "A12",
+        "title": "조건문 안의 줄은 들여쓰기",
+        "required": false
+      },
+      {
+        "id": "A13",
+        "title": "목록의 첫 위치는 0입니다",
+        "required": true
+      },
+      {
+        "id": "A14",
+        "title": "for 줄의 in은 소문자입니다",
+        "required": true
+      },
+      {
+        "id": "A15",
+        "title": "반복 중 쌓은 값을 지키기",
+        "required": false
+      },
+      {
+        "id": "A16",
+        "title": "이름표를 정확하게 사용하기",
+        "required": false
+      },
+      {
+        "id": "A17",
+        "title": "초과와 이상은 결과가 다릅니다",
+        "required": true
+      },
+      {
+        "id": "A18",
+        "title": "혼자 작성한 코드로 다시 확인하기",
+        "required": true
+      }
+    ],
+    "concepts": [
+      {
+        "id": "C01",
+        "title": "파일을 저장하고 실행하기"
+      },
+      {
+        "id": "C02",
+        "title": "print와 주석"
+      },
+      {
+        "id": "C03",
+        "title": "숫자·자료형·계산"
+      },
+      {
+        "id": "C04",
+        "title": "변수와 대입"
+      },
+      {
+        "id": "C05",
+        "title": "문자열과 출력 형식"
+      },
+      {
+        "id": "C06",
+        "title": "input과 형변환"
+      },
+      {
+        "id": "C07",
+        "title": "문자열 정리"
+      },
+      {
+        "id": "C08",
+        "title": "비교와 참·거짓"
+      },
+      {
+        "id": "C09",
+        "title": "if·else·elif 조건문"
+      },
+      {
+        "id": "C10",
+        "title": "리스트에 여러 값 담기"
+      },
+      {
+        "id": "C11",
+        "title": "for와 range 반복"
+      },
+      {
+        "id": "C12",
+        "title": "반복하며 합계·개수·평균 구하기"
+      },
+      {
+        "id": "C13",
+        "title": "딕셔너리와 이름으로 찾기"
+      },
+      {
+        "id": "C14",
+        "title": "while·break·continue"
+      },
+      {
+        "id": "C15",
+        "title": "잘못된 입력과 예외 처리"
+      },
+      {
+        "id": "C16",
+        "title": "함수·매개변수·return"
+      },
+      {
+        "id": "C17",
+        "title": "입력부터 요약까지 종합하기"
+      }
+    ],
+    "assignments": [
+      {
+        "id": "HW01",
+        "title": "별표로 크리스마스트리 만들기",
+        "concepts": "입력·조건·반복·문자열·예외·함수",
+        "statement": "높이에 맞춰 가운데 정렬된 트리와 기둥을 만드세요. 모양을 고정 문자열로 미리 적지 말고 반복문으로 공백과 별 개수를 계산하세요. 높이 입력 함수와 출력 함수를 나누고, 공백과 별 개수를 계산한 이유를 주석으로 설명하세요.",
+        "input": "정수 높이 H를 한 줄에 입력합니다. 3~15만 허용합니다. 글자·소수·범위 밖 정수는 높이 오류를 출력한 뒤 다시 입력받습니다.",
+        "output": "잘못된 입력마다 높이 오류를 출력합니다. 정상 높이면 잎 H줄과 기둥 1줄을 출력하고 종료합니다. 잎은 위에서부터 별 1, 3, 5, …, 2H-1개입니다. 기둥은 | 하나입니다. 왼쪽 공백으로 가운데를 맞추며 오른쪽 공백과 빈 줄은 출력하지 않습니다.",
+        "requirements": [
+          "높이 입력 함수와 트리 출력 함수를 작성한다.",
+          "공백과 별 개수를 반복문에서 계산한다.",
+          "잘못된 높이를 다시 입력받는다."
+        ],
+        "extension": "잎에 사용할 문자와 기둥 높이를 입력받아 보세요. 확장은 필수 채점에 포함하지 않습니다.",
+        "examples": [
+          [
+            "4\n",
+            "   *\n  ***\n *****\n*******\n   |\n"
+          ],
+          [
+            "abc\n2\n3\n",
+            "높이 오류\n높이 오류\n  *\n ***\n*****\n  |\n"
+          ]
+        ]
+      },
+      {
+        "id": "HW02",
+        "title": "좌석 예약 프로그램",
+        "concepts": "리스트·인덱스·조건·반복·함수·상태 관리",
+        "statement": "좌석 5개를 가진 예약 프로그램을 만드세요. 처음에는 모두 빈 좌석입니다. 예약·취소 결과는 다음 명령에서도 유지됩니다. 현황 표시·예약·취소 중 최소 두 동작을 함수로 나누세요. 사람의 좌석 번호와 리스트 위치가 어떻게 다른지 주석으로 설명하세요.",
+        "input": "명령을 한 줄씩 입력합니다. 1: 현황 보기, 2: 예약, 3: 취소, 0: 종료입니다. 2와 3 다음 줄에는 좌석 번호 1~5를 입력합니다. 잘못된 명령은 메뉴 오류, 잘못된 번호는 좌석 오류를 출력하고 다음 명령을 받습니다.",
+        "output": "현황은 빈 좌석 O, 예약 좌석 X로 표시하고 1:O 2:O 3:O 4:O 5:O 형식으로 출력합니다. 예약 성공은 예약 완료, 중복 예약은 이미 예약, 취소 성공은 취소 완료, 빈 좌석 취소는 빈 좌석을 출력합니다. 0이면 종료를 출력합니다. 오류 시 상태를 바꾸지 않습니다.",
+        "requirements": [
+          "리스트에 좌석 상태를 저장한다.",
+          "현황·예약·취소 중 최소 두 동작을 함수로 분리한다.",
+          "중복 예약·빈 좌석 취소·잘못된 번호를 처리한다."
+        ],
+        "extension": "남은 좌석 수를 표시하고 두 좌석을 함께 예약해 보세요. 하나라도 이미 예약되어 있으면 두 좌석 모두 변경하지 않게 해 보세요.",
+        "examples": [
+          [
+            "1\n2\n3\n2\n3\n1\n3\n3\n0\n",
+            "1:O 2:O 3:O 4:O 5:O\n예약 완료\n이미 예약\n1:O 2:O 3:X 4:O 5:O\n취소 완료\n종료\n"
+          ],
+          [
+            "2\n6\n3\n1\nx\n0\n",
+            "좌석 오류\n빈 좌석\n메뉴 오류\n종료\n"
+          ]
+        ]
+      },
+      {
+        "id": "HW03",
+        "title": "측정값 분석 프로그램",
+        "concepts": "리스트·반복·예외·누적·함수·경계값",
+        "statement": "측정값을 반복 입력받아 목록에 저장하고 개수·합계·평균·최댓값·최솟값·기준 초과 개수를 출력하세요. 기준 입력·측정값 수집·요약을 함수로 분리하세요. 합계와 초과 개수 중 하나 이상은 반복문으로 직접 계산하세요. 빈 목록은 따로 처리하세요.",
+        "input": "첫 줄에 정수 기준을 입력합니다. 잘못되면 기준 오류를 출력하고 다시 묻습니다. 다음 줄부터 정수 측정값을 입력하고 done으로 끝냅니다. 명령의 공백과 대소문자는 무시합니다. 잘못된 값은 입력 오류를 출력하고 저장하지 않습니다. 기준과 측정값은 -1000~1000만 허용합니다.",
+        "output": "값이 없으면 측정값 없음만 출력합니다. 값이 있으면 개수 N, 합계 S, 평균 A, 최댓값 M, 최솟값 m, 기준 초과 K를 각각 한 줄 출력합니다. 평균은 소수점 둘째 자리까지 표시합니다. 기준과 같은 값은 초과에 포함하지 않습니다.",
+        "requirements": [
+          "입력·수집·요약 함수를 작성한다.",
+          "값을 리스트에 저장하고 잘못된 입력을 제외한다.",
+          "빈 목록·음수·중복·기준과 같은 값을 처리한다."
+        ],
+        "extension": "정렬한 목록에서 중앙값을 구하세요. 개수가 짝수면 가운데 두 값의 평균을 사용합니다.",
+        "examples": [
+          [
+            "5\n4\n5\nbad\n7\ndone\n",
+            "입력 오류\n개수 3\n합계 16\n평균 5.33\n최댓값 7\n최솟값 4\n기준 초과 1\n"
+          ],
+          [
+            "0\ndone\n",
+            "측정값 없음\n"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "topic": "Python 심화",
+    "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-15",
+    "activities": [
+      {
+        "id": "A01",
+        "title": "같은 업무를 함수로 묶는 이유",
+        "required": false
+      },
+      {
+        "id": "A02",
+        "title": "def로 정의하고 이름으로 호출하기",
+        "required": true
+      },
+      {
+        "id": "A03",
+        "title": "매개변수와 실제 인자",
+        "required": true
+      },
+      {
+        "id": "A04",
+        "title": "print와 return의 차이",
+        "required": true
+      },
+      {
+        "id": "A05",
+        "title": "조건을 담은 상태 함수",
+        "required": false
+      },
+      {
+        "id": "A06",
+        "title": "예상 사례표로 함수 확인하기",
+        "required": false
+      },
+      {
+        "id": "A07",
+        "title": "파일 경로와 텍스트 읽기",
+        "required": false
+      },
+      {
+        "id": "A08",
+        "title": "CSV를 이름표가 있는 행으로 읽기",
+        "required": true
+      },
+      {
+        "id": "A09",
+        "title": "JSON 결과를 새 파일로 저장하기",
+        "required": true
+      },
+      {
+        "id": "A10",
+        "title": "미측정과 잘못된 숫자의 구별",
+        "required": true
+      },
+      {
+        "id": "A11",
+        "title": "오류의 위치·종류·원값",
+        "required": false
+      },
+      {
+        "id": "A12",
+        "title": "try와 except로 예상 오류 기록",
+        "required": false
+      },
+      {
+        "id": "A13",
+        "title": "범위 규칙을 함수에서 확인하기",
+        "required": true
+      },
+      {
+        "id": "A14",
+        "title": "한 값 수정 뒤 같은 사례 재확인",
+        "required": true
+      },
+      {
+        "id": "A15",
+        "title": "어떤 파일을 넣고 어떤 결과를 받을지 적어 봅시다",
+        "required": false
+      },
+      {
+        "id": "A16",
+        "title": "로그 검사기 전체 흐름",
+        "required": true
+      },
+      {
+        "id": "A17",
+        "title": "정상·빈 입력·잘못된 입력 비교",
+        "required": true
+      },
+      {
+        "id": "A18",
+        "title": "검사기 사용 방법과 검사 항목 전달하기",
+        "required": false
+      }
+    ],
+    "concepts": [
+      {
+        "id": "D01",
+        "title": "함수로 일을 나누고 결과 돌려받기"
+      },
+      {
+        "id": "D02",
+        "title": "함수 입력·기본값·변수의 범위"
+      },
+      {
+        "id": "D03",
+        "title": "여러 기록을 담는 구조와 원본 복사"
+      },
+      {
+        "id": "D04",
+        "title": "순서·번호·두 목록을 함께 처리하기"
+      },
+      {
+        "id": "D05",
+        "title": "입력 오류와 미측정 값을 구분하기"
+      },
+      {
+        "id": "D06",
+        "title": "파일 위치·텍스트 읽기·CSV 읽기"
+      },
+      {
+        "id": "D07",
+        "title": "CSV 저장과 다시 읽어서 확인하기"
+      },
+      {
+        "id": "D08",
+        "title": "JSON 구조·자료형·저장과 읽기"
+      },
+      {
+        "id": "D09",
+        "title": "중복·누락·잘못된 기록 따로 모으기"
+      },
+      {
+        "id": "D10",
+        "title": "항목별로 묶어서 합계·평균 구하기"
+      },
+      {
+        "id": "D11",
+        "title": "코드를 파일로 나누고 다시 사용하기"
+      },
+      {
+        "id": "D12",
+        "title": "CSV 검사에서 JSON 보고서까지 연결하기"
+      }
+    ],
+    "assignments": [
+      {
+        "id": "AH01",
+        "title": "문자 도형 제작기",
+        "concepts": "함수·반복·JSON 읽기·텍스트 저장·입력 검사",
+        "statement": "JSON 설정을 읽어 트리 또는 다이아몬드를 만들고 텍스트 파일로 저장하세요. 크기가 바뀌어도 가운데 정렬이 유지되어야 합니다. 모양을 고정 문자열로 미리 적지 말고 반복문으로 계산하세요.",
+        "input": "Python 파일 옆 data/shape.json을 읽습니다. shape는 tree 또는 diamond, height는 정확히 정수 3~15, char는 *, #, @ 중 하나입니다. true를 정수 높이 1로 인정하지 않습니다. 필요한 키 누락·잘못된 자료형·범위·JSON 문법·없는 파일은 설정 오류로 처리합니다.",
+        "output": "정상이면 work/shape.txt를 UTF-8로 저장하고 도형 저장 완료를 출력합니다. 각 줄 오른쪽 공백과 빈 줄은 없으며 마지막 줄 끝에는 줄바꿈이 있습니다. 오류면 설정 오류만 출력하고 기존 결과 파일을 덮어쓰지 않습니다.",
+        "requirements": [
+          "설정 읽기·검사, 도형 줄 목록 만들기, 파일 저장을 함수로 분리하세요.",
+          "tree는 잎 H줄 뒤 가운데 | 하나를 출력합니다. 잎은 1·3·5·…·2H-1개입니다.",
+          "diamond는 위 H줄이 1·3·…·2H-1개, 아래 H-1줄이 2H-3·…·3·1개입니다. 가장 넓은 줄을 두 번 출력하지 않습니다.",
+          "입력은 data에서 읽고 결과는 work에 저장하세요. 높이 3·4·15와 두 모양을 시험하세요."
+        ],
+        "examples": [
+          [
+            "data/shape.json",
+            "{\n  \"shape\": \"diamond\",\n  \"height\": 3,\n  \"char\": \"*\"\n}",
+            "work/shape.txt",
+            "  *\n ***\n*****\n ***\n  *\n"
+          ]
+        ],
+        "extension": "트리 여러 개를 세로로 이어 출력하거나, 테두리만 있는 다이아몬드를 만들어 보세요. 확장은 필수 점수에 포함하지 않습니다."
+      },
+      {
+        "id": "AH02",
+        "title": "다시 실행해도 유지되는 예약 관리",
+        "concepts": "함수·리스트·반복·JSON 저장과 복원·자료형 검사",
+        "statement": "기초의 좌석 예약 프로그램을 파일 저장 방식으로 확장하세요. 프로그램을 종료하고 다시 실행해도 예약이 유지되어야 합니다. 학생이 실제로 파일을 삭제하거나 고치기 전에는 임의로 초기화하지 않습니다.",
+        "input": "명령을 한 줄씩 입력합니다. 1: 현황, 2: 예약, 3: 취소, 0: 종료입니다. 2·3 다음 줄은 좌석 번호 1~5입니다. 상태 파일은 Python 파일 옆 work/seats.json입니다. 파일이 없으면 빈 좌석 5개로 시작합니다. 기존 파일이 있다면 길이 5의 bool 리스트인지 검사합니다.",
+        "output": "현황은 1:O 2:O 3:O 4:O 5:O 형식이며 예약 좌석은 X입니다. 예약 완료·이미 예약·취소 완료·빈 좌석·메뉴 오류·좌석 오류·종료 문구는 기초 과제와 같습니다. 잘못된 상태 파일이면 저장파일 오류만 출력하고 종료합니다. 잘못된 상태 파일을 덮어쓰지 않습니다.",
+        "requirements": [
+          "불러오기·저장·현황·예약 또는 취소 기능을 함수로 나누세요.",
+          "성공한 예약·취소 직후 JSON을 저장하세요. 중복 예약과 오류 입력으로 상태를 바꾸지 않습니다.",
+          "JSON 문자열 \"false\", 숫자 0·1은 bool로 인정하지 않습니다.",
+          "실행 1에서 3번 좌석 예약 후 종료하고 실행 2에서 예약 상태를 확인한 뒤 취소하세요."
+        ],
+        "examples": [
+          [
+            "실행 1의 키보드 입력",
+            "2\n3\n0\n",
+            "실행 1의 출력",
+            "예약 완료\n종료\n"
+          ],
+          [
+            "실행 2의 키보드 입력",
+            "1\n3\n3\n0\n",
+            "실행 2의 출력",
+            "1:O 2:O 3:X 4:O 5:O\n취소 완료\n종료\n"
+          ]
+        ],
+        "extension": "좌석 수를 설정 파일로 읽거나, 예약·취소 시각을 별도 기록에 남겨 보세요. 기존 예약을 지우지 않는 이전 규칙도 정하세요."
+      },
+      {
+        "id": "AH03",
+        "title": "센서 기록 검사와 구역별 보고서",
+        "concepts": "CSV·JSON·함수·집합·오류 목록·그룹 집계",
+        "statement": "CSV를 읽어 정상 기록과 문제 기록을 분리하고 구역별 평균과 경고 목록을 JSON 보고서로 만드세요. 입력 파일을 수정하지 않고 잘못된 행의 줄 번호와 이유를 남깁니다.",
+        "input": "Python 파일 옆 data/sensors.csv를 읽습니다. 필수 열은 id, area, temperature입니다. id·area는 공백 제거 후 비어 있으면 안 됩니다. 이미 채택한 id가 다시 나오면 중복입니다. 온도 빈칸은 None, 그 외 값은 유한한 숫자로 변환합니다. 열 개수 오류·번호 누락·구역 누락·번호 중복·온도 오류를 각각 분리합니다. 필요한 열 또는 파일이 없으면 입력파일 오류만 출력하고 기존 보고서를 유지합니다.",
+        "output": "work/sensor_report.json에 input_count, accepted_count, measured_count, missing_count, average, alerts, areas, issues를 저장합니다. average는 유효 측정 평균을 소수 둘째 자리로 반올림한 숫자이며 측정이 없으면 null입니다. alerts는 온도 28 이상인 기록 id 목록입니다. areas는 구역마다 measured_count, missing_count, average를 담습니다. issues는 line과 reason을 가진 객체 목록입니다. 화면에는 입력 N / 정상 A / 오류 E를 출력합니다.",
+        "requirements": [
+          "읽기·행 검사·구역 집계·보고서 저장을 함수로 분리하세요.",
+          "None은 평균과 측정 개수에서 제외하되 채택 기록과 미측정 개수에는 포함하세요.",
+          "온도 0은 실제 측정값입니다. NaN·Infinity와 bool을 정상 온도로 처리하지 않습니다. CSV 값은 문자열이므로 True 같은 글자는 변환 오류입니다.",
+          "검사 순서는 열 개수 → id 누락 → area 누락 → 이미 채택한 id 중복 → 온도 변환입니다. 정상 채택 후에만 id를 기록합니다.",
+          "헤더를 1줄로 보고 첫 데이터 줄은 2입니다. 원본 CSV와 보고서를 다시 읽어 결과를 검산하세요."
+        ],
+        "examples": [
+          [
+            "data/sensors.csv",
+            "id,area,temperature\nS01,A,22.5\nS02,A,30\nS03,B,\nS01,A,24\nS04,B,bad\n,B,18\n",
+            "화면 출력",
+            "입력 6 / 정상 3 / 오류 3\n"
+          ]
+        ],
+        "extension": "구역별 최고·최저와 경고 개수를 추가하거나 보고서를 읽어 텍스트 요약 파일도 만드세요. 미측정만 있는 구역도 처리하세요."
+      }
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "topic": "Git/GitHub",
+    "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-16",
+    "activities": [
+      {
+        "id": "A01",
+        "title": "파일·Git·GitHub의 역할",
+        "required": false
+      },
+      {
+        "id": "A02",
+        "title": "GitHub 가입·메일 인증·로그인",
+        "required": true
+      },
+      {
+        "id": "A03",
+        "title": "내 프로필 저장소 만들기",
+        "required": true
+      },
+      {
+        "id": "A04",
+        "title": "Git 설치와 터미널 확인",
+        "required": false
+      },
+      {
+        "id": "A05",
+        "title": "GitHub Desktop 설치·브라우저 로그인",
+        "required": true
+      },
+      {
+        "id": "A06",
+        "title": "프로필 저장소를 PC로 clone하기",
+        "required": true
+      },
+      {
+        "id": "A07",
+        "title": "Markdown으로 자기소개 쓰기",
+        "required": false
+      },
+      {
+        "id": "A08",
+        "title": "프로필 소개와 꾸미기 순서",
+        "required": true
+      },
+      {
+        "id": "A09",
+        "title": "이미지·GIF·움짤 넣기",
+        "required": true
+      },
+      {
+        "id": "A10",
+        "title": "기술 배지와 학습 배지 꾸미기",
+        "required": true
+      },
+      {
+        "id": "A11",
+        "title": "변경 비교·커밋·push로 공개하기",
+        "required": true
+      },
+      {
+        "id": "A12",
+        "title": "선택: 버튼과 Git 명령 연결하기",
+        "required": false
+      },
+      {
+        "id": "A13",
+        "title": "파이썬 미니 프로젝트 올리기",
+        "required": true
+      },
+      {
+        "id": "A14",
+        "title": "작품 README와 실행 방법 쓰기",
+        "required": true
+      },
+      {
+        "id": "A15",
+        "title": "프로필에 작품 연결하고 대표 저장소 고정",
+        "required": false
+      },
+      {
+        "id": "A16",
+        "title": "짝의 작품에 개선 제안 남기기",
+        "required": false
+      },
+      {
+        "id": "A17",
+        "title": "내 브랜치에서 수정하고 PR·병합하기",
+        "required": true
+      },
+      {
+        "id": "A18",
+        "title": "다시 받아 실행하고 오늘 결과 확인",
+        "required": true
+      }
+    ],
+    "concepts": [
+      {
+        "id": "G01",
+        "title": "Git·GitHub·Desktop·GitLab의 역할"
+      },
+      {
+        "id": "G02",
+        "title": "설치와 로그인, 각각 확인하기"
+      },
+      {
+        "id": "G03",
+        "title": "검은 창에서 폴더 찾고 명령 쓰기"
+      },
+      {
+        "id": "G04",
+        "title": "파일 저장 → 선택 → 첫 커밋"
+      },
+      {
+        "id": "G05",
+        "title": "diff·log와 add 뒤에 다시 고친 파일"
+      },
+      {
+        "id": "G06",
+        "title": "브랜치·병합·충돌과 복구"
+      },
+      {
+        "id": "G07",
+        "title": "clone·fetch·pull·push의 방향"
+      },
+      {
+        "id": "G08",
+        "title": "Desktop 화면과 Git 명령 연결하기"
+      },
+      {
+        "id": "G09",
+        "title": "GitHub Code에서 파일과 기록 찾기"
+      },
+      {
+        "id": "G10",
+        "title": "Issues·Projects·Wiki·Discussions"
+      },
+      {
+        "id": "G11",
+        "title": "PR·fork·검토와 병합"
+      },
+      {
+        "id": "G12",
+        "title": "Actions·Releases·Pages·Security"
+      },
+      {
+        "id": "G13",
+        "title": "GitLab과 GitHub 비교하기"
+      },
+      {
+        "id": "G14",
+        "title": "오류 메시지·취소·명령 빠른 찾기"
+      },
+      {
+        "id": "G15",
+        "title": "실제 화면을 함께 둘러보는 순서"
+      }
+    ],
+    "assignments": []
+  },
+  {
+    "date": "2026-10-20",
+    "topic": "AI 코드에이전트",
+    "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-20",
+    "activities": [],
+    "concepts": [
+      {
+        "id": "E01",
+        "title": "채팅과 코드 에이전트는 어떻게 다른가"
+      },
+      {
+        "id": "E02",
+        "title": "도구별 기능과 실행 환경"
+      },
+      {
+        "id": "E03",
+        "title": "VS Code에서 폴더와 실행 준비"
+      },
+      {
+        "id": "E04",
+        "title": "확장 설치·로그인·첫 질문"
+      },
+      {
+        "id": "E05",
+        "title": "설명·계획·수정·실행·검토를 나누기"
+      },
+      {
+        "id": "E06",
+        "title": "만들기 전에 요구사항 정하기"
+      },
+      {
+        "id": "E07",
+        "title": "화면·데이터·함수를 함께 설계하기"
+      },
+      {
+        "id": "E08",
+        "title": "잘 수행할 수 있는 작업 요청 만들기"
+      },
+      {
+        "id": "E09",
+        "title": "컨텍스트를 고르고 작업을 이어 가기"
+      },
+      {
+        "id": "E10",
+        "title": "README와 설계·작업 기록의 역할"
+      },
+      {
+        "id": "E11",
+        "title": "AGENTS.md와 도구별 지침 파일"
+      },
+      {
+        "id": "E12",
+        "title": "Skill로 반복 작업 절차 만들기"
+      },
+      {
+        "id": "E13",
+        "title": "확장·플러그인·Hook·MCP 구별하기"
+      },
+      {
+        "id": "E14",
+        "title": "MCP로 외부 문서 도구 연결하기"
+      },
+      {
+        "id": "E15",
+        "title": "diff·테스트·오류 재현으로 검토하기"
+      },
+      {
+        "id": "E16",
+        "title": "변경 요청을 나누고 다음 작업 전달하기"
+      }
+    ],
+    "assignments": []
+  },
+  {
+    "date": "2026-10-21",
+    "topic": "HTML/CSS/React/MCP",
+    "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-21",
+    "activities": [],
+    "concepts": [
+      {
+        "id": "W01",
+        "title": "방문자와 목적부터 기획하기"
+      },
+      {
+        "id": "W02",
+        "title": "폴더·파일·브라우저와 실행 준비"
+      },
+      {
+        "id": "W03",
+        "title": "HTML로 의미 있는 내용과 길 만들기"
+      },
+      {
+        "id": "W04",
+        "title": "CSS의 선택자·박스·색과 글자"
+      },
+      {
+        "id": "W05",
+        "title": "Flex·Grid와 반응형 화면"
+      },
+      {
+        "id": "W06",
+        "title": "JavaScript로 메뉴와 문의 검사 연결"
+      },
+      {
+        "id": "W07",
+        "title": "React를 처음 만나는 사람을 위한 부품과 JSX"
+      },
+      {
+        "id": "W08",
+        "title": "state로 화면을 바꾸고 폼 비교하기"
+      },
+      {
+        "id": "W09",
+        "title": "AI에게 작업을 나눠 맡기고 변경 확인하기"
+      },
+      {
+        "id": "W10",
+        "title": "GitHub Pages에 처음 배포하기"
+      },
+      {
+        "id": "W11",
+        "title": "Notion 팀 문서 만들고 MCP 연결하기"
+      },
+      {
+        "id": "W12",
+        "title": "팀 피드백을 읽고 수정 작업으로 바꾸기"
+      },
+      {
+        "id": "W13",
+        "title": "배포 오류를 고치고 수정본 다시 공개하기"
+      }
+    ],
+    "assignments": []
+  }
+]

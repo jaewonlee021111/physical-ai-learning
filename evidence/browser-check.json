@@ -1,0 +1,36 @@
+{
+  "browser": "Chrome cloud browser",
+  "desktop_viewport_width": 1363,
+  "html": {
+    "all_cards": 5,
+    "web_filter_cards": 2,
+    "empty_form": "rejected",
+    "valid_form": "validation passed; not transmitted"
+  },
+  "react": {
+    "all_cards": 5,
+    "python_filter_cards": 3,
+    "empty_form": "rejected",
+    "valid_form": "validation passed; not transmitted"
+  },
+  "desktop_horizontal_overflow": false,
+  "app_console_errors_observed": false,
+  "note": "Desktop and mobile interactions checked in Chrome. Browser-extension-origin metadata errors were excluded.",
+  "mobile": {
+    "method": "390px iframe browsing contexts, 375px content after scrollbar",
+    "html": {
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "menu_open": "true",
+      "escape_closes": "true"
+    },
+    "react": {
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "menu_open": "true",
+      "escape_closes_after_fix": "true"
+    },
+    "text_overlap_fixed": true,
+    "screenshot": "portfolio-mobile.jpg"
+  }
+}

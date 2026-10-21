@@ -1,0 +1,16 @@
+[
+  {
+    "sensor_id": "S01",
+    "location": "입구",
+    "temperature_c": 23.0,
+    "measured_at": "2026-10-08 10:10",
+    "active": true
+  },
+  {
+    "sensor_id": "S03",
+    "location": "실습실",
+    "temperature_c": null,
+    "measured_at": "2026-10-08 10:10",
+    "active": true
+  }
+]

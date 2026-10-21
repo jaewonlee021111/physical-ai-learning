@@ -1,0 +1,6 @@
+sensor_id,location,temperature_c,measured_at,active
+S01,입구,22.5,2026-10-08 10:00,true
+S02,창고,25.0,2026-10-08 10:00,true
+S03,실습실,,2026-10-08 10:00,true
+S04,복도,0.0,2026-10-08 10:00,false
+

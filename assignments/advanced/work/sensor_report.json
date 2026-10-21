@@ -1,0 +1,36 @@
+{
+  "input_count": 6,
+  "accepted_count": 3,
+  "measured_count": 2,
+  "missing_count": 1,
+  "average": 26.25,
+  "alerts": [
+    "S02"
+  ],
+  "areas": {
+    "A": {
+      "measured_count": 2,
+      "missing_count": 0,
+      "average": 26.25
+    },
+    "B": {
+      "measured_count": 0,
+      "missing_count": 1,
+      "average": null
+    }
+  },
+  "issues": [
+    {
+      "line": 5,
+      "reason": "번호 중복"
+    },
+    {
+      "line": 6,
+      "reason": "온도 오류"
+    },
+    {
+      "line": 7,
+      "reason": "번호 누락"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+sensor_id,location,temperature_c,measured_at,active
+S01,입구,,2026-10-08 10:00,true
+S02,창고,,2026-10-08 10:00,true
+

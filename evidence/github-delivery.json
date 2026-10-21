@@ -1,0 +1,9 @@
+{
+  "repository": "jaewonlee021111/physical-ai-learning",
+  "url": "https://github.com/jaewonlee021111/physical-ai-learning",
+  "branch": "main",
+  "migration_from": "jaewonlee021111/arduino-mall/physical-ai",
+  "source_implementation_pr": "https://github.com/jaewonlee021111/arduino-mall/pull/1",
+  "layout": "dedicated repository; learning files at root",
+  "human_peer_review": false
+}

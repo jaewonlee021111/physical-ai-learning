@@ -1,0 +1,38 @@
+[
+  {
+    "source": "readings.csv",
+    "total": 4,
+    "accepted": 4,
+    "missing": 1,
+    "numeric": 3,
+    "issue_count": 0,
+    "average": 15.83
+  },
+  {
+    "source": "bad_readings.csv",
+    "total": 6,
+    "accepted": 4,
+    "missing": 1,
+    "numeric": 3,
+    "issue_count": 2,
+    "average": 15.83
+  },
+  {
+    "source": "empty_readings.csv",
+    "total": 0,
+    "accepted": 0,
+    "missing": 0,
+    "numeric": 0,
+    "issue_count": 0,
+    "average": null
+  },
+  {
+    "source": "missing_readings.csv",
+    "total": 2,
+    "accepted": 2,
+    "missing": 2,
+    "numeric": 0,
+    "issue_count": 0,
+    "average": null
+  }
+]

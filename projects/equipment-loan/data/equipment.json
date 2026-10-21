@@ -1,0 +1,5 @@
+[
+  {"id": "CAM01", "name": "카메라", "total": 2, "available": 1},
+  {"id": "MIC01", "name": "마이크", "total": 3, "available": 3},
+  {"id": "KIT01", "name": "센서 키트", "total": 4, "available": 0}
+]
