@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "opencv": "5.0.0",
+  "numpy": "2.3.5",
+  "unit_tests": {
+    "run": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "camera_hardware_tested": false,
+  "gpu_tested": false,
+  "browser_ui_tested": false
+}

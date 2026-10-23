@@ -1,0 +1,184 @@
+{
+  "model": "yolo26n.pt",
+  "device": "cpu",
+  "warmup_excluded": true,
+  "input_sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+  "runs": [
+    {
+      "imgsz": 320,
+      "wall_ms": 352.889,
+      "speed_ms": {
+        "preprocess": 11.495348000153172,
+        "inference": 333.1759550001152,
+        "postprocess": 6.816928999796801
+      },
+      "count": 5,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.8285,
+          "xyxy": [
+            52.36,
+            397.29,
+            238.54,
+            905.62
+          ]
+        },
+        {
+          "label": "bus",
+          "confidence": 0.8239,
+          "xyxy": [
+            22.12,
+            228.44,
+            804.72,
+            760.3
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7629,
+          "xyxy": [
+            216.67,
+            397.45,
+            348.83,
+            860.78
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.561,
+          "xyxy": [
+            665.35,
+            393.33,
+            810.0,
+            875.79
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4314,
+          "xyxy": [
+            2.71,
+            580.88,
+            79.85,
+            877.67
+          ]
+        }
+      ]
+    },
+    {
+      "imgsz": 416,
+      "wall_ms": 241.56,
+      "speed_ms": {
+        "preprocess": 5.970365999928617,
+        "inference": 227.64772100026676,
+        "postprocess": 2.5343610000163608
+      },
+      "count": 4,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.854,
+          "xyxy": [
+            48.31,
+            394.09,
+            236.91,
+            908.45
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.804,
+          "xyxy": [
+            220.93,
+            402.01,
+            347.68,
+            863.02
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7741,
+          "xyxy": [
+            666.79,
+            385.39,
+            810.0,
+            870.24
+          ]
+        },
+        {
+          "label": "bus",
+          "confidence": 0.7339,
+          "xyxy": [
+            24.89,
+            228.98,
+            806.39,
+            739.95
+          ]
+        }
+      ]
+    },
+    {
+      "imgsz": 640,
+      "wall_ms": 416.877,
+      "speed_ms": {
+        "preprocess": 10.230359000161116,
+        "inference": 401.0590670000056,
+        "postprocess": 3.9619710000806663
+      },
+      "count": 5,
+      "detections": [
+        {
+          "label": "bus",
+          "confidence": 0.8806,
+          "xyxy": [
+            0.0,
+            230.48,
+            803.2,
+            750.7
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.872,
+          "xyxy": [
+            48.61,
+            397.7,
+            240.34,
+            902.41
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.8608,
+          "xyxy": [
+            222.94,
+            404.82,
+            345.47,
+            861.02
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.8462,
+          "xyxy": [
+            669.64,
+            394.48,
+            809.87,
+            879.44
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6562,
+          "xyxy": [
+            0.21,
+            552.96,
+            59.73,
+            871.27
+          ]
+        }
+      ]
+    }
+  ]
+}

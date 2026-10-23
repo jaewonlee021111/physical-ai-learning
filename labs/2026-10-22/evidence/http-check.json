@@ -1,0 +1,332 @@
+{
+  "/": {
+    "status": 200,
+    "bytes": 1785
+  },
+  "/static/app.js": {
+    "status": 200,
+    "bytes": 4484
+  },
+  "/api/status": {
+    "status": 200,
+    "bytes": 2984
+  },
+  "status_snapshot": {
+    "active": "idle",
+    "bottleneck": "capture",
+    "conf": 0.5,
+    "counts": {},
+    "detections": [],
+    "device": "cpu",
+    "error": null,
+    "frame": 2,
+    "imgsz": null,
+    "inference_enabled": false,
+    "logs": [
+      {
+        "bottleneck": "capture",
+        "conf": 0.5,
+        "counts": {},
+        "detections": [],
+        "device": "cpu",
+        "event": "frame",
+        "frame": 1,
+        "imgsz": null,
+        "inference_enabled": false,
+        "level": "INFO",
+        "mean_ms": {
+          "capture": 103.864,
+          "inference": 0.0,
+          "model_preprocess": 0.0,
+          "output": 2.62,
+          "postprocess": 0.0,
+          "preprocess": 0.204,
+          "visualize": 0.015
+        },
+        "mode": "original",
+        "model_call_ms": 0.0,
+        "model_enabled": false,
+        "processing_fps": 9.37,
+        "sampled_out": false,
+        "shape": [
+          360,
+          640,
+          3
+        ],
+        "skip": 3,
+        "source": "synthetic",
+        "stream_fps_estimate": 9.37,
+        "time": "2026-10-23T14:00:18.567151+00:00",
+        "timings_ms": {
+          "capture": 103.864,
+          "inference": 0.0,
+          "model_preprocess": 0.0,
+          "output": 2.62,
+          "postprocess": 0.0,
+          "preprocess": 0.204,
+          "visualize": 0.015
+        }
+      },
+      {
+        "event": "stages",
+        "frame": 1,
+        "level": "DEBUG",
+        "stages": [
+          {
+            "end": 2700.789501892,
+            "frame": 1,
+            "input": [
+              {
+                "dtype": "uint8",
+                "shape": [
+                  360,
+                  640,
+                  3
+                ]
+              },
+              {
+                "type": "str"
+              }
+            ],
+            "ms": 0.13459299998430652,
+            "output": {
+              "dtype": "uint8",
+              "shape": [
+                360,
+                640,
+                3
+              ]
+            },
+            "stage": "preprocess",
+            "start": 2700.789367299
+          },
+          {
+            "end": 2700.789784369,
+            "frame": 1,
+            "input": [
+              {
+                "dtype": "uint8",
+                "shape": [
+                  360,
+                  640,
+                  3
+                ]
+              },
+              {
+                "length": 0,
+                "type": "list"
+              }
+            ],
+            "ms": 0.0030399996830965392,
+            "output": {
+              "dtype": "uint8",
+              "shape": [
+                360,
+                640,
+                3
+              ]
+            },
+            "stage": "visualize",
+            "start": 2700.789781329
+          },
+          {
+            "end": 2700.793441554,
+            "frame": 1,
+            "input": [
+              {
+                "dtype": "uint8",
+                "shape": [
+                  360,
+                  640,
+                  3
+                ]
+              }
+            ],
+            "ms": 3.640018999703898,
+            "output": {
+              "length": 14393,
+              "type": "bytes"
+            },
+            "stage": "output",
+            "start": 2700.789801535
+          },
+          {
+            "end": 2700.923444558,
+            "frame": 1,
+            "input": [
+              {
+                "type": "int"
+              }
+            ],
+            "ms": 100.14961800015953,
+            "output": {
+              "dtype": "uint8",
+              "shape": [
+                360,
+                640,
+                3
+              ]
+            },
+            "stage": "capture",
+            "start": 2700.82329494
+          },
+          {
+            "end": 2700.927140467,
+            "frame": 1,
+            "input": [
+              {
+                "type": "NoneType"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            "ms": 103.84872099984932,
+            "output": {
+              "dtype": "uint8",
+              "shape": [
+                360,
+                640,
+                3
+              ]
+            },
+            "stage": "capture",
+            "start": 2700.823291746
+          },
+          {
+            "end": 2700.927281646,
+            "frame": 1,
+            "input": [
+              {
+                "dtype": "uint8",
+                "shape": [
+                  360,
+                  640,
+                  3
+                ]
+              },
+              {
+                "type": "str"
+              }
+            ],
+            "ms": 0.1190290004160488,
+            "output": {
+              "dtype": "uint8",
+              "shape": [
+                360,
+                640,
+                3
+              ]
+            },
+            "stage": "preprocess",
+            "start": 2700.927162617
+          },
+          {
+            "end": 2700.927371781,
+            "frame": 1,
+            "input": [
+              {
+                "dtype": "uint8",
+                "shape": [
+                  360,
+                  640,
+                  3
+                ]
+              },
+              {
+                "length": 0,
+                "type": "list"
+              }
+            ],
+            "ms": 0.0014840002222626936,
+            "output": {
+              "dtype": "uint8",
+              "shape": [
+                360,
+                640,
+                3
+              ]
+            },
+            "stage": "visualize",
+            "start": 2700.927370297
+          },
+          {
+            "end": 2700.92995438,
+            "frame": 1,
+            "input": [
+              {
+                "dtype": "uint8",
+                "shape": [
+                  360,
+                  640,
+                  3
+                ]
+              }
+            ],
+            "ms": 2.5690049997137976,
+            "output": {
+              "length": 14393,
+              "type": "bytes"
+            },
+            "stage": "output",
+            "start": 2700.927385375
+          }
+        ],
+        "time": "2026-10-23T14:00:18.567929+00:00"
+      }
+    ],
+    "mean_ms": {
+      "capture": 54.309,
+      "inference": 0.0,
+      "model_preprocess": 0.0,
+      "output": 2.558,
+      "postprocess": 0.0,
+      "preprocess": 0.286,
+      "visualize": 0.014
+    },
+    "mode": "original",
+    "model_call_ms": 0.0,
+    "model_enabled": false,
+    "processing_fps": 130.46,
+    "sampled_out": false,
+    "shape": [
+      360,
+      640,
+      3
+    ],
+    "skip": 3,
+    "source": "synthetic",
+    "stream_fps_estimate": 10.0,
+    "timings_ms": {
+      "capture": 4.753,
+      "inference": 0.0,
+      "model_preprocess": 0.0,
+      "output": 2.497,
+      "postprocess": 0.0,
+      "preprocess": 0.368,
+      "visualize": 0.014
+    }
+  },
+  "/api/pipeline": {
+    "status": 200,
+    "bytes": 2724
+  },
+  "capture": {
+    "status": 200,
+    "source": "synthetic"
+  },
+  "jpeg": {
+    "status": 200,
+    "signature": "ffd8"
+  },
+  "/video_feed": {
+    "status": 200,
+    "content_type": "multipart/x-mixed-replace; boundary=frame",
+    "prefix": "--frame\r\nContent-Type: image/j"
+  },
+  "/events": {
+    "status": 200,
+    "content_type": "text/event-stream; charset=utf-8",
+    "prefix": "data: {\"mode\": \"original\", \"sh"
+  }
+}

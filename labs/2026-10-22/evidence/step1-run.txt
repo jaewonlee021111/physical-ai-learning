@@ -1,0 +1,1 @@
+{'source': 'synthetic', 'shape': (360, 640, 3), 'dtype': 'uint8', 'BGR[y=100,x=100]': [60, 190, 240]}

@@ -1,0 +1,17 @@
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+imgsz=320 / 352.89 ms / 5 objects
+  person           0.829  [52.36, 397.29, 238.54, 905.62]
+  bus              0.824  [22.12, 228.44, 804.72, 760.3]
+  person           0.763  [216.67, 397.45, 348.83, 860.78]
+  person           0.561  [665.35, 393.33, 810.0, 875.79]
+  person           0.431  [2.71, 580.88, 79.85, 877.67]
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+imgsz=416 / 241.56 ms / 4 objects
+  person           0.854  [48.31, 394.09, 236.91, 908.45]
+  person           0.804  [220.93, 402.01, 347.68, 863.02]
+  person           0.774  [666.79, 385.39, 810.0, 870.24]
+  bus              0.734  [24.89, 228.98, 806.39, 739.95]
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.

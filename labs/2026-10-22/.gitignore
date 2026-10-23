@@ -1,0 +1,7 @@
+vision/runtime/
+vision/*.pt
+vision/bus.jpg
+vision/*_openvino_model/
+.venv/
+.pio/
+__pycache__/

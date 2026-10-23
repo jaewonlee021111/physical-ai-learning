@@ -1,0 +1,13 @@
+{
+  "platformio": "6.2.0",
+  "uno": {
+    "status": "blocked_before_compile",
+    "reason": "AVR toolchain download: checksum mismatch; alternate mirrors returned HTTP 403. No integrity checks bypassed."
+  },
+  "esp32s3": {
+    "status": "incomplete_before_compile",
+    "reason": "Platform, RISC-V and Xtensa toolchains installed after mirror retries; remaining tool downloads incomplete. No successful compile recorded."
+  },
+  "physical_boards_available": false,
+  "uploaded_to_device": false
+}

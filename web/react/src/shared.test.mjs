@@ -9,4 +9,4 @@ test('이메일 형식과 최소·최대 길이를 검사한다', () => {
   assert.ok(validateInquiry({name:'이재원',email:'a@b.com',message:'가'.repeat(1001)}).message);
 });
 test('정상 입력과 경계 길이를 허용한다', () => { for (const length of [10,1000]) assert.deepEqual(validateInquiry({name:'이재원',email:'test@example.com',message:'가'.repeat(length)}),{}); });
-test('분야 필터는 원본과 분리된 결과를 제공한다', () => { assert.equal(filterProjects('all').length,5); assert.equal(filterProjects('web').length,2); assert.equal(filterProjects('python').length,3); assert.equal(filterProjects('unknown').length,0); });
+test('분야 필터는 원본과 분리된 결과를 제공한다', () => { assert.equal(filterProjects('all').length,6); assert.equal(filterProjects('web').length,2); assert.equal(filterProjects('python').length,4); assert.equal(filterProjects('unknown').length,0); });

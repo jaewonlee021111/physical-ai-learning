@@ -40,7 +40,7 @@ function Projects() {
 }
 
 function Journey() {
-  return <section id="journey" className="journey section"><div className="shell journey-layout"><div><p className="eyebrow">02 / LEARNING JOURNEY</p><h2>한 번의 실행보다,<br />이어지는 과정.</h2><p className="muted">2026년 10월 21일까지 공개된<br />교육 진도에 맞춘 실습 기록입니다.</p><a className="text-link" href={repo}>날짜별 코드와 실행 결과 ↗</a></div><ol className="session-list">{sessions.map(([date, title, detail]) => <li key={date}><time dateTime={`2026-${date.replace('.', '-')}`}>{date}</time><div><h3>{title}</h3><p>{detail}</p></div></li>)}</ol></div></section>;
+  return <section id="journey" className="journey section"><div className="shell journey-layout"><div><p className="eyebrow">02 / LEARNING JOURNEY</p><h2>한 번의 실행보다,<br />이어지는 과정.</h2><p className="muted">2026년 10월 22일까지 확인한<br />교육 진도에 맞춘 실습 기록입니다.</p><a className="text-link" href={repo}>날짜별 코드와 실행 결과 ↗</a></div><ol className="session-list">{sessions.map(([date, title, detail]) => <li key={date}><time dateTime={`2026-${date.replace('.', '-')}`}>{date}</time><div><h3>{title}</h3><p>{detail}</p></div></li>)}</ol></div></section>;
 }
 
 function InquiryForm() {

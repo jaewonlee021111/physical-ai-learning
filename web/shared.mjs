@@ -1,4 +1,5 @@
 export const projects = [
+  { id: 'vision', category: 'python', tag: 'OPENCV · YOLO · FLASK', title: 'VISION LAB', description: '촬영·전처리·YOLO 탐지·단계별 지연 시간과 로그를 확인하는 로컬 대시보드. 합성 입력 테스트와 실제 사진 추론을 구분해 검증했습니다.', href: 'https://github.com/jaewonlee021111/physical-ai-learning/tree/main/labs/2026-10-22', accent: 'green', preview: ['capture → preprocess', 'YOLO26n · CPU', 'latency · debug'] },
   { id: 'data', category: 'python', tag: 'DATA · PYTHON', title: '데이터를 다룬다는 것', description: 'CSV와 JSON 사이에서 식별자, 미측정, 실제 0의 의미를 지키는 데이터 실습.', href: 'https://github.com/jaewonlee021111/physical-ai-learning/tree/main/labs/2026-10-08', accent: 'blue', preview: ['001 → "001"', 'empty → null', '0 ≠ missing'] },
   { id: 'python', category: 'python', tag: 'PYTHON · FILE I/O', title: '작게 만들고, 끝까지 검사하기', description: '트리·좌석 예약·측정값 분석부터 JSON 저장과 구역별 센서 보고서까지.', href: 'https://github.com/jaewonlee021111/physical-ai-learning/tree/main/assignments', accent: 'orange', preview: ['  *', ' ***', '*****'] },
   { id: 'equipment', category: 'python', tag: 'AGENT · MCP', title: '실습실 장비 대여 관리', description: '재고 경계를 지키는 대여·반납 CLI. 실제 파일 복원과 MCP 문서 읽기를 검증합니다.', href: 'https://github.com/jaewonlee021111/physical-ai-learning/tree/main/projects/equipment-loan', accent: 'green', preview: ['CAM01   1 / 2', 'MIC01   3 / 3', 'KIT01   0 / 4'] },
@@ -13,6 +14,7 @@ export const sessions = [
   ['10.16', '변경을 남기고 공유하기', 'Git·GitHub·브랜치·PR'],
   ['10.20', 'AI와 함께 구현하고 검토하기', '설계·에이전트·Skills·MCP'],
   ['10.21', '웹으로 보여 주기', 'HTML·CSS·React·팀 검수'],
+  ['10.22', '카메라에서 웹 대시보드까지', '포트폴리오·OpenCV·YOLO·Flask·보드 환경'],
 ];
 
 export function validateInquiry(values) {
