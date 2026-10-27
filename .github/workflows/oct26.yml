@@ -1,0 +1,24 @@
+name: October 26 practical checks
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'labs/2026-10-26/uno/**'
+      - '.github/workflows/oct26.yml'
+permissions:
+  contents: read
+jobs:
+  uno:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        mode: [check, rgb, lcd, climate, joystick, keypad, piano, ir, sound]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: python3 -m pip install platformio==6.2.0
+      - run: python3 -m platformio run -d labs/2026-10-26/uno -e ${{ matrix.mode }}
