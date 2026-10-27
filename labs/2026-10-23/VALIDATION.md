@@ -1,5 +1,7 @@
 # 검증 기록 · 2026-10-27
 
+최종 코드 검증 커밋: `6158a9853365aec44786552101596bf93ff2ff6f` (HTTPS 전 NTP 동기화 포함).
+
 기본 구현 검증 커밋: `e511bbfa4760e0d5636bba8ee6a2a3a4c96660ee`.
 
 | 검사 | 결과·증거 |
@@ -10,6 +12,7 @@
 | 기존 비전 회귀 검사 | 15개 테스트 성공 |
 | 기존 10/22 전체 CI | 성공: 기존 보드 빌드와 브라우저 검사 포함 |
 
+- [최종 8종 빌드·Python 20개·DB 권한 검사: 모두 성공](https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40497409898)
 - [10/23 컴파일·게이트웨이 CI](https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40487167086)
 - [10/22 회귀 CI](https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40487180116)
 
