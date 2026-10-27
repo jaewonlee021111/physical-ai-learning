@@ -5,6 +5,7 @@ on:
     paths:
       - 'labs/2026-10-23/firmware/**'
       - 'labs/2026-10-23/gateway/**'
+      - 'labs/2026-10-23/cloud/**'
       - 'labs/2026-10-22/vision/**'
       - '.github/workflows/oct23.yml'
 permissions:
@@ -36,3 +37,26 @@ jobs:
         working-directory: labs/2026-10-23/gateway
       - run: python3 verify.py
         working-directory: labs/2026-10-22/vision
+  database:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: ci-disposable-only
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      PGPASSWORD: ci-disposable-only
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: psql -h 127.0.0.1 -U postgres -v ON_ERROR_STOP=1 -c 'CREATE ROLE anon; CREATE ROLE authenticated;'
+      - run: psql -h 127.0.0.1 -U postgres -v ON_ERROR_STOP=1 -f labs/2026-10-23/cloud/schema.sql -f labs/2026-10-23/cloud/test.sql
