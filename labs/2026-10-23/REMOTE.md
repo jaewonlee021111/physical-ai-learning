@@ -33,7 +33,7 @@ values ('본인-UUID',extensions.digest('본인-임의키','sha256'));
 ```
 
 4. `firmware/include/secrets.h`의 `SUPABASE_URL`, `SUPABASE_ANON_KEY`(프로젝트 legacy anon JWT), `DEVICE_ID`, `DEVICE_KEY`를 설정한다. `SUPABASE_CA_PEM`에는 서버 인증서 검증에 필요한 신뢰 루트 CA를 PEM 문자열로 넣는다. 인증서 체인이 바뀌면 갱신한다. 빈 CA로는 실행하지 않으며 TLS 검증을 끄지 않는다.
-5. `cloud` 환경을 빌드·업로드한다. Wi-Fi 연결과 RPC 응답 코드를 확인한다. HTTP 오류 시 URL·키·TLS·프로젝트 SQL 설치를 구분해 점검한다.
+5. `cloud` 환경을 빌드·업로드한다. Wi-Fi 연결과 RPC 응답 코드를 확인한다. 보드는 NTP로 시간을 동기화한 뒤 인증서를 검증한다. 대기 메시지가 계속되면 NTP 접근도 확인한다. HTTP 오류 시 URL·키·TLS·프로젝트 SQL 설치를 구분해 점검한다.
 6. 로컬 HTTP 서버로 `web/cloud.html`을 열고 URL·anon JWT·장치 UUID·장치 키를 입력한다. LED 명령과 터치 보고 시각을 확인한다. 입력값은 브라우저 저장소에 보관하지 않는다.
 
 `service_role`·DB 비밀번호는 브라우저나 펌웨어에 넣지 않는다. anon JWT만으로 전체 장치 테이블에 접근할 수 없도록 테이블 권한을 철회하고, 고정된 search_path의 제한된 RPC가 장치별 키를 확인한다. 장치 키는 LED 제어 권한이므로 공유하지 않는다. 이 구성은 수업용이며 계정 로그인·사용자별 소유권·감사 기록을 갖춘 제품 인증 체계와 다르다.

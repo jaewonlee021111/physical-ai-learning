@@ -1,6 +1,7 @@
 #pragma once
 #include <HTTPClient.h>
 #include <WiFiClientSecure.h>
+#include <time.h>
 
 /// <summary>JSON 문자열에 들어갈 문자를 이스케이프한다.</summary>
 static String jsonString(String text)
@@ -45,6 +46,7 @@ void setup()
     Serial.begin(115200);
     setupTouch();
     setupWifi();
+    configTime(0, 0, "pool.ntp.org", "time.cloudflare.com");
 }
 
 /// <summary>클라우드 LED 목표값을 읽고 터치 상태를 보고한다. 외부 계정 설정 후에만 동작한다.</summary>
@@ -54,7 +56,15 @@ void loop()
     pollTouch();
     static uint32_t last = 0;
     bool configured = strlen(SUPABASE_URL) > 0 && strlen(DEVICE_KEY) >= 32 && strlen(DEVICE_ID) > 0 && strlen(SUPABASE_ANON_KEY) > 0 && strlen(SUPABASE_CA_PEM) > 0;
-    if (configured && WiFi.status() == WL_CONNECTED && millis() - last >= 1000)
+    // TLS 인증서 유효 기간을 검증할 수 있는 시각까지 전송하지 않는다.
+    bool timeReady = time(nullptr) >= 1704067200;
+    if (configured && WiFi.status() == WL_CONNECTED && !timeReady && millis() - last >= 5000)
+    {
+        last = millis();
+        configTime(0, 0, "pool.ntp.org", "time.cloudflare.com");
+        Serial.println("Waiting for network time before verified HTTPS. Check NTP access.");
+    }
+    if (configured && timeReady && WiFi.status() == WL_CONNECTED && millis() - last >= 1000)
     {
         last = millis();
         String response = rpc("lab_read");

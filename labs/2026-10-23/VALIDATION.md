@@ -1,16 +1,21 @@
 # 검증 기록 · 2026-10-27
 
-대상 코드 커밋: `e511bbfa4760e0d5636bba8ee6a2a3a4c96660ee`.
+기본 구현 검증 커밋: `e511bbfa4760e0d5636bba8ee6a2a3a4c96660ee`.
 
 | 검사 | 결과·증거 |
 |---|---|
 | PlatformIO 펌웨어 8종 | scanner / blink / touch / sta / ap / ble / camera / cloud 모두 컴파일 성공 |
 | 원격 영상 입력 | Python 5개 테스트 성공: 분할 JPEG·버퍼 제한·URL 검증·실제 HTTP JPEG 수신에서 Flask 캡처까지·연결 실패 |
+| 클라우드 SQL | 일회성 PostgreSQL 17에서 RPC 왕복·잘못된 키·다른 장치 접근·측정 범위·테이블 직접 접근 거부 검사 성공 |
 | 기존 비전 회귀 검사 | 15개 테스트 성공 |
 | 기존 10/22 전체 CI | 성공: 기존 보드 빌드와 브라우저 검사 포함 |
 
 - [10/23 컴파일·게이트웨이 CI](https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40487167086)
 - [10/22 회귀 CI](https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40487180116)
+
+- [PostgreSQL 권한 검사](https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40497262233/job/122165740067)
+
+카메라 빌드 사용량: RAM 64,488 / 327,680 bytes, Flash 1,014,826 / 3,342,336 bytes. PlatformIO espressif32 8.0.0, Arduino-ESP32 3.3.12. 실제 FPS 측정값은 아니다.
 
 HTTP 통합 테스트는 테스트 서버가 제공하는 JPEG를 실제 요청·디코딩한 것이다. ESP32 카메라 영상이나 무선 링크를 시험한 것으로 해석하지 않는다. 테스트에서 실제 YOLO 모델 추론을 새로 실행한 것은 아니며 이전 날짜의 검출기 구현을 재사용한다.
 
