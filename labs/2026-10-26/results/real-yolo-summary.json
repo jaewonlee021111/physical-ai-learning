@@ -1,0 +1,63 @@
+{
+  "verified_on": "2026-10-27",
+  "workflow": "https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40505209838",
+  "ultralytics": "8.4.190",
+  "model": "yolo26n.pt",
+  "device": "cpu",
+  "input": "Ultralytics packaged bus.jpg (not a camera capture)",
+  "imgsz": 320,
+  "confidence": 0.25,
+  "jpeg_bytes": 209443,
+  "detections": [
+    {
+      "label": "person",
+      "confidence": 0.8285,
+      "xyxy": [
+        52.4,
+        397.3,
+        238.5,
+        905.6
+      ]
+    },
+    {
+      "label": "bus",
+      "confidence": 0.8239,
+      "xyxy": [
+        22.1,
+        228.4,
+        804.7,
+        760.3
+      ]
+    },
+    {
+      "label": "person",
+      "confidence": 0.7629,
+      "xyxy": [
+        216.7,
+        397.5,
+        348.8,
+        860.8
+      ]
+    },
+    {
+      "label": "person",
+      "confidence": 0.561,
+      "xyxy": [
+        665.3,
+        393.3,
+        810,
+        875.8
+      ]
+    },
+    {
+      "label": "person",
+      "confidence": 0.4314,
+      "xyxy": [
+        2.7,
+        580.9,
+        79.9,
+        877.7
+      ]
+    }
+  ]
+}
