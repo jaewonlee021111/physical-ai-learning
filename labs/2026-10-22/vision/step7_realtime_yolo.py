@@ -33,8 +33,8 @@ def main(default_mode="window"):
     parser.add_argument("--frames", type=int, default=0)
     parser.add_argument("--port", type=int, default=5050)
     args = parser.parse_args()
-    size = args.imgsz or (640 if args.device.startswith("cuda") else 320)
-    skip = args.skip or (1 if args.device.startswith("cuda") else 2)
+    size = args.imgsz if args.imgsz is not None else (640 if args.device.startswith("cuda") else 320)
+    skip = args.skip if args.skip is not None else (1 if args.device.startswith("cuda") else 2)
     if not 1 <= skip <= 30 or not 0 <= args.conf <= 1 or size < 32:
         parser.error("skip은 1~30, conf는 0~1, imgsz는 32 이상이어야 합니다.")
     weights = args.model
@@ -84,3 +84,4 @@ def main(default_mode="window"):
 
 if __name__ == "__main__":
     main()
+

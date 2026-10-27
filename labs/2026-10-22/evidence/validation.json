@@ -3,7 +3,7 @@
   "opencv": "5.0.0",
   "numpy": "2.3.5",
   "unit_tests": {
-    "run": 12,
+    "run": 15,
     "failures": 0,
     "errors": 0
   },

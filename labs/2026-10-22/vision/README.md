@@ -66,8 +66,13 @@ python verify.py
 python step4_opencv_basics.py --synthetic --out ../evidence/preprocess
 ```
 
-[단위 검사 12개](../evidence/unit-tests.txt), [실제 HTTP·MJPEG·SSE·촬영 검사](../evidence/http-check.json), [검증 범위](../evidence/validation.json), [실제 YOLO 사진 추론](../evidence/yolo/yolo-benchmark.json)을 저장했다. 단위 테스트의 가짜 탐지기는 경계 검사에만 쓰며, 실제 YOLO 결과와 분리한다.
+[단위 검사 15개](../evidence/unit-tests.txt), [실제 HTTP·MJPEG·SSE·촬영 검사](../evidence/http-check.json), [검증 범위](../evidence/validation.json), [실제 YOLO 사진 추론](../evidence/yolo/yolo-benchmark.json)을 저장했다. 단위 테스트의 가짜 탐지기는 경계 검사에만 쓰며, 실제 YOLO 결과와 분리한다.
 
 카메라 하드웨어·GUI 창·GPU·브라우저 화면 조작은 이 환경에서 확인하지 않았다. 사용자 PC에서 위 단계대로 실제 카메라와 장치를 확인해야 한다. 카메라가 안 열리면 USB·OS 카메라 권한·장치 인덱스·Zoom 등 다른 앱의 사용 여부를 확인한다. 다른 앱을 임의로 강제 종료하지 않는다.
 
 촬영 이미지·모델 가중치·런타임 로그는 `.gitignore`로 제외했다. 공개 예시는 직접 생성한 합성 도형이며 수강생의 얼굴·원본 녹화·개인 채팅을 포함하지 않는다.
+
+
+## 사용자 PC에서 장비 검사
+
+[FINISH_ON_PC.md](../FINISH_ON_PC.md)의 Windows 실행 파일과 `pc_check.py`로 실제 카메라·선택한 보드 업로드·시리얼 응답을 검사할 수 있다. 검사 결과는 로컬 runtime에만 저장하며 자동으로 GitHub에 보내지 않는다.

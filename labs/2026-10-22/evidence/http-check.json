@@ -1,15 +1,15 @@
 {
   "/": {
     "status": 200,
-    "bytes": 1785
+    "bytes": 1786
   },
   "/static/app.js": {
     "status": 200,
-    "bytes": 4484
+    "bytes": 4485
   },
   "/api/status": {
     "status": 200,
-    "bytes": 2984
+    "bytes": 2980
   },
   "status_snapshot": {
     "active": "idle",
@@ -19,7 +19,7 @@
     "detections": [],
     "device": "cpu",
     "error": null,
-    "frame": 2,
+    "frame": 1,
     "imgsz": null,
     "inference_enabled": false,
     "logs": [
@@ -35,18 +35,18 @@
         "inference_enabled": false,
         "level": "INFO",
         "mean_ms": {
-          "capture": 103.864,
+          "capture": 60.295,
           "inference": 0.0,
           "model_preprocess": 0.0,
-          "output": 2.62,
+          "output": 0.688,
           "postprocess": 0.0,
-          "preprocess": 0.204,
-          "visualize": 0.015
+          "preprocess": 0.21,
+          "visualize": 0.012
         },
         "mode": "original",
         "model_call_ms": 0.0,
         "model_enabled": false,
-        "processing_fps": 9.37,
+        "processing_fps": 16.33,
         "sampled_out": false,
         "shape": [
           360,
@@ -55,16 +55,16 @@
         ],
         "skip": 3,
         "source": "synthetic",
-        "stream_fps_estimate": 9.37,
-        "time": "2026-10-23T14:00:18.567151+00:00",
+        "stream_fps_estimate": 10.0,
+        "time": "2026-10-27T09:38:18.527438+00:00",
         "timings_ms": {
-          "capture": 103.864,
+          "capture": 60.295,
           "inference": 0.0,
           "model_preprocess": 0.0,
-          "output": 2.62,
+          "output": 0.688,
           "postprocess": 0.0,
-          "preprocess": 0.204,
-          "visualize": 0.015
+          "preprocess": 0.21,
+          "visualize": 0.012
         }
       },
       {
@@ -73,7 +73,7 @@
         "level": "DEBUG",
         "stages": [
           {
-            "end": 2700.789501892,
+            "end": 1009.716929136,
             "frame": 1,
             "input": [
               {
@@ -88,7 +88,7 @@
                 "type": "str"
               }
             ],
-            "ms": 0.13459299998430652,
+            "ms": 0.05387999999584281,
             "output": {
               "dtype": "uint8",
               "shape": [
@@ -98,10 +98,10 @@
               ]
             },
             "stage": "preprocess",
-            "start": 2700.789367299
+            "start": 1009.716875256
           },
           {
-            "end": 2700.789784369,
+            "end": 1009.71697944,
             "frame": 1,
             "input": [
               {
@@ -117,7 +117,7 @@
                 "type": "list"
               }
             ],
-            "ms": 0.0030399996830965392,
+            "ms": 0.0010109999948326731,
             "output": {
               "dtype": "uint8",
               "shape": [
@@ -127,10 +127,10 @@
               ]
             },
             "stage": "visualize",
-            "start": 2700.789781329
+            "start": 1009.716978429
           },
           {
-            "end": 2700.793441554,
+            "end": 1009.71752419,
             "frame": 1,
             "input": [
               {
@@ -142,23 +142,23 @@
                 ]
               }
             ],
-            "ms": 3.640018999703898,
+            "ms": 0.5353219999051362,
             "output": {
               "length": 14393,
               "type": "bytes"
             },
             "stage": "output",
-            "start": 2700.789801535
+            "start": 1009.716988868
           },
           {
-            "end": 2700.923444558,
+            "end": 1009.809520503,
             "frame": 1,
             "input": [
               {
                 "type": "int"
               }
             ],
-            "ms": 100.14961800015953,
+            "ms": 60.24007200005599,
             "output": {
               "dtype": "uint8",
               "shape": [
@@ -168,10 +168,10 @@
               ]
             },
             "stage": "capture",
-            "start": 2700.82329494
+            "start": 1009.749280431
           },
           {
-            "end": 2700.927140467,
+            "end": 1009.809558063,
             "frame": 1,
             "input": [
               {
@@ -181,7 +181,7 @@
                 "type": "int"
               }
             ],
-            "ms": 103.84872099984932,
+            "ms": 60.27982700004486,
             "output": {
               "dtype": "uint8",
               "shape": [
@@ -191,10 +191,10 @@
               ]
             },
             "stage": "capture",
-            "start": 2700.823291746
+            "start": 1009.749278236
           },
           {
-            "end": 2700.927281646,
+            "end": 1009.809715615,
             "frame": 1,
             "input": [
               {
@@ -209,7 +209,7 @@
                 "type": "str"
               }
             ],
-            "ms": 0.1190290004160488,
+            "ms": 0.13706499998988875,
             "output": {
               "dtype": "uint8",
               "shape": [
@@ -219,10 +219,10 @@
               ]
             },
             "stage": "preprocess",
-            "start": 2700.927162617
+            "start": 1009.80957855
           },
           {
-            "end": 2700.927371781,
+            "end": 1009.809792807,
             "frame": 1,
             "input": [
               {
@@ -238,7 +238,7 @@
                 "type": "list"
               }
             ],
-            "ms": 0.0014840002222626936,
+            "ms": 0.0010930000371445203,
             "output": {
               "dtype": "uint8",
               "shape": [
@@ -248,10 +248,10 @@
               ]
             },
             "stage": "visualize",
-            "start": 2700.927370297
+            "start": 1009.809791714
           },
           {
-            "end": 2700.92995438,
+            "end": 1009.810477088,
             "frame": 1,
             "input": [
               {
@@ -263,31 +263,31 @@
                 ]
               }
             ],
-            "ms": 2.5690049997137976,
+            "ms": 0.6729130000167061,
             "output": {
               "length": 14393,
               "type": "bytes"
             },
             "stage": "output",
-            "start": 2700.927385375
+            "start": 1009.809804175
           }
         ],
-        "time": "2026-10-23T14:00:18.567929+00:00"
+        "time": "2026-10-27T09:38:18.527785+00:00"
       }
     ],
     "mean_ms": {
-      "capture": 54.309,
+      "capture": 60.295,
       "inference": 0.0,
       "model_preprocess": 0.0,
-      "output": 2.558,
+      "output": 0.688,
       "postprocess": 0.0,
-      "preprocess": 0.286,
-      "visualize": 0.014
+      "preprocess": 0.21,
+      "visualize": 0.012
     },
     "mode": "original",
     "model_call_ms": 0.0,
     "model_enabled": false,
-    "processing_fps": 130.46,
+    "processing_fps": 16.33,
     "sampled_out": false,
     "shape": [
       360,
@@ -298,13 +298,13 @@
     "source": "synthetic",
     "stream_fps_estimate": 10.0,
     "timings_ms": {
-      "capture": 4.753,
+      "capture": 60.295,
       "inference": 0.0,
       "model_preprocess": 0.0,
-      "output": 2.497,
+      "output": 0.688,
       "postprocess": 0.0,
-      "preprocess": 0.368,
-      "visualize": 0.014
+      "preprocess": 0.21,
+      "visualize": 0.012
     }
   },
   "/api/pipeline": {

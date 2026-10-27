@@ -134,6 +134,36 @@ class VisionTests(unittest.TestCase):
             self.assertEqual(self.service.status["detections"][0]["label"], "test fixture")
         self.assertEqual(detector.calls, 1)
 
+    def test_window_cli_rejects_zero_skip_and_size(self):
+        import contextlib
+        import io
+        from step7_realtime_yolo import main
+        for option in ("--skip", "--imgsz"):
+            with patch("sys.argv", ["step7", option, "0", "--no-yolo"]):
+                with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                    main()
+                self.assertEqual(error.exception.code, 2)
+
+    def test_pc_check_reports_missing_camera_and_releases_it(self):
+        from pc_check import camera_check
+        with patch("pc_check.cv2.VideoCapture") as constructor:
+            constructor.return_value.isOpened.return_value = False
+            self.assertEqual(camera_check(1), {"status":"unavailable","index":1})
+            constructor.return_value.release.assert_called_once()
+
+    def test_pc_check_reads_real_camera_interface_without_synthetic_fallback(self):
+        from pc_check import camera_check
+        with patch("pc_check.cv2.VideoCapture") as constructor:
+            cap = constructor.return_value
+            cap.isOpened.return_value = True
+            cap.read.return_value = (True,np.zeros((48,64,3),dtype=np.uint8))
+            result = camera_check(2,frame_count=3)
+            self.assertEqual(result["status"],"passed")
+            self.assertEqual(result["frames_read"],3)
+            self.assertEqual(cap.read.call_count,3)
+            cap.release.assert_called_once()
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+

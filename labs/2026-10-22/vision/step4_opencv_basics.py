@@ -29,9 +29,10 @@ def main():
             finally:
                 source.close()
     rgb = preprocess(image, "rgb")
+    x, y = min(100, image.shape[1]-1), min(50, image.shape[0]-1)
     info = {"shape": list(image.shape), "dtype": str(image.dtype),
-            "min": int(image.min()), "max": int(image.max()), "coordinate_xy": [100, 100],
-            "array_yx": [100, 100], "BGR_pixel": image[100, 100].tolist(), "RGB_pixel": rgb[100, 100].tolist()}
+            "min": int(image.min()), "max": int(image.max()), "coordinate_xy": [x, y],
+            "array_yx": [y, x], "BGR_pixel": image[y, x].tolist(), "RGB_pixel": rgb[y, x].tolist()}
     print(json.dumps(info, ensure_ascii=False, indent=2))
     save_comparison(image, args.out)
     panels = []
@@ -46,3 +47,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

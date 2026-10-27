@@ -60,7 +60,7 @@ python examples/advanced_concepts.py D03
 | Git | 실제 로컬 저장소에서 명령 27개 실행 |
 | MCP | stdio 초기화·도구 목록·문서 읽기·허용 목록 검사, Notion 개인 문서 생성·실제 읽기 |
 | 웹 | HTML·React 필터·폼, 모바일 메뉴·Escape·가로 넘침 확인, Vite 빌드 성공 |
-| 10/22 비전 추가 검증 | 단위 테스트 12개·실제 HTTP/MJPEG/SSE·촬영 통과, YOLO26n 실제 사진 CPU 추론 |
+| 10/22 비전 추가 검증 | 단위 테스트 15개·실제 HTTP/MJPEG/SSE·촬영 통과, YOLO26n 실제 사진 CPU 추론 |
 
 [통합 실행 기록](evidence/validation.json) · [브라우저 기록](evidence/browser-check.json) · [로컬 MCP 요청·응답](evidence/mcp-transcript.json) · [Notion 실제 연결 확인](evidence/notion-connection.json)
 
@@ -80,3 +80,4 @@ python examples/advanced_concepts.py D03
 ## 출처
 
 [공식 교육 사이트](https://zeusk302-png.github.io/kdigital-physical-ai/)의 10월 21일까지 공개된 6개 날짜를 기준으로 했습니다. 날짜 사이 공백이 휴강이라는 뜻은 아닙니다. 활동 명세는 [curriculum.json](curriculum.json), 원본 실습 입력과 새 풀이의 구분은 [ATTRIBUTION](ATTRIBUTION.md)에 기록했습니다. 10월 22일은 사용자가 제공한 Zoom 녹화의 자동 자막과 강사 채팅을 대조해 추가했습니다. [해당 날짜 출처·확인 범위](labs/2026-10-22/SOURCES.md)를 구분했습니다. 10월 23일 수업 진도는 포함하지 않습니다.
+

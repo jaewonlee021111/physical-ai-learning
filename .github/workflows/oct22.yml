@@ -1,0 +1,50 @@
+name: October 22 practice checks
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'labs/2026-10-22/**'
+      - 'web/**'
+      - '.github/workflows/oct22.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  vision:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: python3 -m pip install -r labs/2026-10-22/vision/requirements.txt
+      - run: python3 verify.py
+        working-directory: labs/2026-10-22/vision
+
+  firmware:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        board: [uno, esp32s3]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: python3 -m pip install platformio==6.2.0
+      - run: python3 -m platformio run -d labs/2026-10-22/firmware/${{ matrix.board }}
+
+  portfolio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: npm ci
+        working-directory: web/react
+      - run: npm test && npm run build
+        working-directory: web/react
