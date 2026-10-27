@@ -1,0 +1,13 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BLE Touch Lab</title>
+<style>body{font:18px system-ui;background:#eef1ee;color:#24352d;max-width:640px;margin:3rem auto;padding:1rem}button{padding:1rem;margin:.5rem}pre{white-space:pre-wrap}</style>
+<h1>BLE 터치와 LED</h1><p>Chrome의 localhost 또는 HTTPS에서 사용합니다. 장치 선택은 연결 버튼을 누른 뒤 직접 승인합니다.</p>
+<button id="connect">BLE 장치 연결</button><button id="on" disabled>LED 켜기</button><button id="off" disabled>LED 끄기</button><button id="disconnect" disabled>연결 해제</button><pre id="status" role="status">연결 전</pre>
+<script type="module">
+const service='34cf0001-5a3b-4ab9-9469-e152c1b37c01', touch='34cf0002-5a3b-4ab9-9469-e152c1b37c01', led='34cf0003-5a3b-4ab9-9469-e152c1b37c01';
+const $=id=>document.getElementById(id);let device,output;let values={touch:'?',led:'?'};
+function render(){ $('status').textContent=JSON.stringify(values,null,2); }
+function disconnected(){for(const id of ['on','off','disconnect'])$(id).disabled=true;$('connect').disabled=false;values={connection:'disconnected'};render();}
+$('connect').onclick=async()=>{try{if(!navigator.bluetooth)throw Error('Web Bluetooth 미지원: 지원하는 Chrome 또는 nRF Connect 앱을 사용하세요.');device=await navigator.bluetooth.requestDevice({filters:[{services:[service]}]});device.addEventListener('gattserverdisconnected',disconnected);const server=await device.gatt.connect();const selected=await server.getPrimaryService(service);output=await selected.getCharacteristic(led);const input=await selected.getCharacteristic(touch);for(const [name,characteristic] of [['touch',input],['led',output]]){values[name]=new TextDecoder().decode(await characteristic.readValue());characteristic.addEventListener('characteristicvaluechanged',event=>{values[name]=new TextDecoder().decode(event.target.value);render()});await characteristic.startNotifications()}values.connection='connected';render();for(const id of ['on','off','disconnect'])$(id).disabled=false;$('connect').disabled=true;}catch(error){$('status').textContent=error.message;}};
+async function write(value){try{await output.writeValueWithResponse(new TextEncoder().encode(value));}catch(error){$('status').textContent=error.message}}
+$('on').onclick=()=>write('1');$('off').onclick=()=>write('0');$('disconnect').onclick=()=>device?.gatt.disconnect();
+</script></html>

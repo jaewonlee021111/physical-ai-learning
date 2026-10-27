@@ -1,0 +1,6 @@
+.venv/
+.pio/
+__pycache__/
+runtime/
+firmware/include/secrets.h
+web/config.local.js

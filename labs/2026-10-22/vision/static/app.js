@@ -38,7 +38,7 @@ $('pause').addEventListener('click', () => {
   $('pause').textContent = paused ? '로그 계속 보기' : '로그 일시정지';
 });
 function draw(data) {
-  $('source').textContent = data.source === 'camera' ? '실제 카메라' : '합성 입력 · 카메라 아님';
+  $('source').textContent = ({camera:'실제 카메라',remote:'ESP32 원격 카메라',synthetic:'합성 입력 · 카메라 아님'})[data.source] || '입력 대기';
   if (data.error) $('error').textContent = data.error;
   $('summary').textContent = `#${data.frame ?? 0} · 약 ${data.stream_fps_estimate ?? 0} FPS · ${data.device ?? 'cpu'} / ${data.imgsz ?? '-'} · conf ${data.conf ?? '-'} · skip ${data.skip ?? '-'} · 병목 ${data.bottleneck ?? '-'}`;
   $('objects').textContent = !data.model_enabled ? 'YOLO 꺼짐 · 탐지를 실행하지 않습니다.' : (data.sampled_out ? '이번 프레임 추론 생략 · 이전 박스 재사용 / ' : '') + (data.detections?.map(o => `${o.label} ${(o.confidence*100).toFixed(1)}%`).join(', ') || '탐지 없음');
@@ -77,3 +77,4 @@ async function init() {
   addEventListener('pagehide', () => events.close(), {once:true});
 }
 init().catch(error => {$('error').textContent = error.message;});
+

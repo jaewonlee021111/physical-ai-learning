@@ -1,0 +1,13 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cloud LED Lab</title>
+<style>body{font:18px system-ui;background:#eef1ee;color:#24352d;max-width:640px;margin:2rem auto;padding:1rem}label{display:grid;margin:1rem 0}input,button{font:inherit;padding:.8rem}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style>
+<h1>외부망 LED 제어</h1><p>Supabase 프로젝트와 SQL 설정이 필요합니다. service_role 키를 입력하지 마세요. 입력값은 저장하거나 URL에 붙이지 않습니다.</p>
+<form id="configuration"><label>프로젝트 HTTPS URL<input name="url" type="url" placeholder="https://example.supabase.co" required></label><label>프로젝트 anon JWT 키<input name="anon" type="password" required></label><label>장치 UUID<input name="id" required></label><label>장치별 capability 키<input name="key" type="password" minlength="32" required></label><button>연결</button></form>
+<button id="on" disabled>LED 켜기</button><button id="off" disabled>LED 끄기</button><pre id="status" role="status">미연결</pre>
+<script type="module">
+let config=null,timer;const $=id=>document.getElementById(id);
+async function rpc(method,extra={}){const response=await fetch(config.url+'/rest/v1/rpc/'+method,{method:'POST',headers:{apikey:config.anon,Authorization:'Bearer '+config.anon,'Content-Type':'application/json'},body:JSON.stringify({p_id:config.id,p_key:config.key,...extra})});if(!response.ok)throw Error('요청 실패 HTTP '+response.status);return response.json();}
+async function refresh(){try{$('status').textContent=JSON.stringify(await rpc('lab_read'),null,2);}catch(error){$('status').textContent=error.message;}timer=setTimeout(refresh,1000);}
+$('configuration').onsubmit=event=>{event.preventDefault();clearTimeout(timer);config=Object.fromEntries(new FormData(event.target));const url=new URL(config.url);if(url.protocol!=='https:'){$('status').textContent='HTTPS 프로젝트 URL이 필요합니다.';return;}config.url=url.origin;$('on').disabled=$('off').disabled=false;refresh();};
+async function change(on){try{await rpc('lab_set_led',{p_on:on});}catch(error){$('status').textContent=error.message}}
+$('on').onclick=()=>change(true);$('off').onclick=()=>change(false);addEventListener('pagehide',()=>clearTimeout(timer));
+</script></html>

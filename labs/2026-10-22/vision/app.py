@@ -31,11 +31,12 @@ class CameraService:
     """<summary>입력 프레임을 한 스레드에서 처리한다.</summary>
     <input>호출 인수 또는 서비스 상태</input><output>처리 결과 또는 상태 갱신</output>
     <reason>요청마다 카메라를 열면 장치 충돌이 나므로 한 생산자와 최신 프레임 한 장을 공유한다.</reason>"""
-    def __init__(self, source="synthetic", camera=0, detector=None, runtime=Path("runtime")):
+    def __init__(self, source="synthetic", camera=0, detector=None, runtime=Path("runtime"), reader=None):
         """<summary>입력·저장·동기화 상태를 준비한다.</summary><param name="source">source 인수</param><param name="camera">camera 인수</param><param name="detector">detector 인수</param><param name="runtime">runtime 인수</param>
         <input>호출 인수 또는 서비스 상태</input><output>처리 결과 또는 상태 갱신</output>
         <reason>실행 전에는 카메라를 열지 않아 테스트와 설정을 독립적으로 할 수 있다.</reason>"""
         self.source, self.camera, self.detector = source, camera, detector
+        self.reader = reader
         self.runtime = Path(runtime)
         self.runtime.mkdir(parents=True, exist_ok=True)
         (self.runtime / "captures").mkdir(exist_ok=True)
@@ -69,8 +70,10 @@ class CameraService:
         """<summary>입력·전처리·추론·출력을 반복한다.</summary>
         <input>호출 인수 또는 서비스 상태</input><output>처리 결과 또는 상태 갱신</output>
         <reason>카메라 소유권과 모델 실행을 한 스레드에 모은다.</reason>"""
-        cap = None
+        cap = self.reader
         try:
+            if self.source == "remote" and cap is None:
+                raise RuntimeError("Remote source requires a reader")
             if self.source == "camera":
                 cap = cv2.VideoCapture(self.camera)
                 if not cap.isOpened():
@@ -296,3 +299,4 @@ def main(default_yolo=False):
 
 if __name__ == "__main__":
     main()
+
