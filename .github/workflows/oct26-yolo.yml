@@ -1,0 +1,26 @@
+name: October 26 real YOLO inference
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'labs/2026-10-26/tests/smoke_yolo.py'
+      - '.github/workflows/oct26-yolo.yml'
+permissions:
+  contents: read
+jobs:
+  actual-model:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: python3 -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+      - run: python3 -m pip install -r labs/2026-10-26/vision/requirements-yolo.txt
+      - run: python3 ../tests/smoke_yolo.py
+        working-directory: labs/2026-10-26/vision
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: oct26-real-yolo-report
+          path: labs/2026-10-26/vision/runtime/yolo_smoke.json
+          retention-days: 7
