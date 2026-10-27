@@ -1,0 +1,5 @@
+#pragma once
+#define WIFI_SSID ""
+#define WIFI_PASSWORD ""
+#define CAMERA_FRAME_SIZE FRAMESIZE_VGA
+#define CAMERA_JPEG_QUALITY 12

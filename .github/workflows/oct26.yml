@@ -4,6 +4,11 @@ on:
   push:
     paths:
       - 'labs/2026-10-26/uno/**'
+      - 'labs/2026-10-26/esp32/**'
+      - 'labs/2026-10-26/vision/**'
+      - 'labs/2026-10-26/games/**'
+      - 'labs/2026-10-26/tools/**'
+      - 'labs/2026-10-26/tests/**'
       - '.github/workflows/oct26.yml'
 permissions:
   contents: read
@@ -22,3 +27,24 @@ jobs:
           persist-credentials: false
       - run: python3 -m pip install platformio==6.2.0
       - run: python3 -m platformio run -d labs/2026-10-26/uno -e ${{ matrix.mode }}
+  esp32:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: python3 -m pip install platformio==6.2.0
+      - run: python3 -m platformio run -d labs/2026-10-26/esp32 -e camera
+  software:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: python3 -m pip install -r labs/2026-10-26/vision/requirements.txt
+      - run: python3 -m unittest discover -s labs/2026-10-26/tests -p 'test_*.py' -v
+      - run: node --test labs/2026-10-26/tests/game.test.mjs
+      - run: npm ci && npx playwright install --with-deps chromium && npm test
+        working-directory: labs/2026-10-26/tests/ui
