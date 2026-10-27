@@ -37,8 +37,9 @@
 | YOLO26n CPU 사진 추론 | 공식 bus 샘플에서 사람·버스 탐지, 워밍업 제외 320/416/640 비교 |
 | 합성 입력 루프 | STEP 1 10프레임, STEP 5 12프레임, STEP 7 실제 YOLO 6프레임 실행 |
 | 포트폴리오 | 비전 프로젝트·10/22 이력·favicon/OG 메타데이터 추가, JS 테스트 4개 통과·React 빌드 성공 |
-| 보드 | 두 설정과 최소 펌웨어 작성. 도구 다운로드 문제로 컴파일 미완료. 실제 USB 업로드 미실행 |
-| 실제 카메라·GUI·GPU·브라우저 화면 | 미검증. 합성 입력과 API 검사를 실제 하드웨어 성공으로 기록하지 않음 |
+| 보드 | 두 설정과 최소 펌웨어 작성. 10/27 GitHub Actions에서 UNO·ESP32S3 컴파일 성공. 실제 USB 업로드 미실행 |
+| 브라우저 화면 | Chromium에서 1280/390px 실서버 연결·조작 3개 검사 통과. 입력은 합성 영상 |
+| 실제 카메라·OpenCV GUI·GPU | 미검증. 합성 입력과 브라우저 검사를 실제 하드웨어 성공으로 기록하지 않음 |
 
 [검증 JSON](evidence/validation.json) · [HTTP 결과](evidence/http-check.json) · [YOLO 측정값](evidence/yolo/yolo-benchmark.json) · [보드 빌드 상태](evidence/build-status.json)
 
@@ -66,3 +67,11 @@
 ## 10/27 추가 마무리
 
 CLI의 0 입력 검증과 작은 이미지의 좌표 처리를 보완하고 비전 검사를 15개로 늘렸다. [실제 PC 검사 안내](FINISH_ON_PC.md)와 Windows 시작 파일을 추가했다. [.github/workflows/oct22.yml](../../.github/workflows/oct22.yml)은 GitHub에서 비전·두 보드·포트폴리오 빌드를 수행한다. 워크플로 파일이 있다는 사실과 각 실행의 성공 여부는 구분한다. 공개 배포는 Vercel 팀 권한 승인이 필요하며, 실제 카메라·보드 업로드는 사용자 PC에서 해야 한다.
+
+### 추가 검증 결과
+
+[GitHub 전체 검사 실행](https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40483176929)에서 비전·브라우저·UNO·ESP32S3·포트폴리오가 모두 통과했다. 이는 위 코드 커밋을 검사한 결과다. [브라우저 검증 JSON](evidence/browser-check.json)과 [보드 컴파일 JSON](evidence/build-status.json)에 입력·환경·남은 장비 검사를 구분했다.
+
+![브라우저 데스크톱 검사](evidence/browser-desktop.png)
+
+[모바일 실제 브라우저 캡처](evidence/browser-mobile.png)

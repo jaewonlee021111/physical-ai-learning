@@ -1,13 +1,24 @@
 {
+  "checked_on": "2026-10-27",
+  "environment": "GitHub-hosted ubuntu-latest",
+  "source_commit": "8f76a33b2e242fa888a37ab87f0ebbfdf8ea00eb",
+  "workflow_run": "https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40483176929",
   "platformio": "6.2.0",
   "uno": {
-    "status": "blocked_before_compile",
-    "reason": "AVR toolchain download: checksum mismatch; alternate mirrors returned HTTP 403. No integrity checks bypassed."
+    "status": "passed",
+    "job_id": 122118311554,
+    "ram_bytes": 188,
+    "flash_bytes": 2056,
+    "generated_file": ".pio/build/uno/firmware.hex"
   },
   "esp32s3": {
-    "status": "incomplete_before_compile",
-    "reason": "Platform, RISC-V and Xtensa toolchains installed after mirror retries; remaining tool downloads incomplete. No successful compile recorded."
+    "status": "passed",
+    "job_id": 122118311589,
+    "ram_bytes": 22300,
+    "flash_bytes": 291783,
+    "generated_file": ".pio/build/xiao_esp32s3/firmware.bin"
   },
   "physical_boards_available": false,
-  "uploaded_to_device": false
+  "uploaded_to_device": false,
+  "notes": "Local tool downloads remain restricted. Successful compilation above was executed in GitHub Actions, not on the user PC."
 }

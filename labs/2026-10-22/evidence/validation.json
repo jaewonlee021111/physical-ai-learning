@@ -9,5 +9,17 @@
   },
   "camera_hardware_tested": false,
   "gpu_tested": false,
-  "browser_ui_tested": false
+  "browser_ui_tested": true,
+  "browser_input": "synthetic",
+  "browser_tests": {
+    "passed": 3,
+    "failed": 0,
+    "workflow_run": "https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40483176929"
+  },
+  "firmware_compile": {
+    "uno": "passed",
+    "esp32s3": "passed",
+    "workflow_run": "https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40483176929"
+  },
+  "user_pc_hardware_tested": false
 }

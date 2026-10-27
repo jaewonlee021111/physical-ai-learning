@@ -60,7 +60,7 @@ python examples/advanced_concepts.py D03
 | Git | 실제 로컬 저장소에서 명령 27개 실행 |
 | MCP | stdio 초기화·도구 목록·문서 읽기·허용 목록 검사, Notion 개인 문서 생성·실제 읽기 |
 | 웹 | HTML·React 필터·폼, 모바일 메뉴·Escape·가로 넘침 확인, Vite 빌드 성공 |
-| 10/22 비전 추가 검증 | 단위 테스트 15개·실제 HTTP/MJPEG/SSE·촬영 통과, YOLO26n 실제 사진 CPU 추론 |
+| 10/22 비전 추가 검증 | 단위 테스트 15개·실제 HTTP/MJPEG/SSE·촬영 통과, YOLO26n 실제 사진 CPU 추론·Chromium 화면 3개 검사·UNO/ESP32S3 컴파일 성공 |
 
 [통합 실행 기록](evidence/validation.json) · [브라우저 기록](evidence/browser-check.json) · [로컬 MCP 요청·응답](evidence/mcp-transcript.json) · [Notion 실제 연결 확인](evidence/notion-connection.json)
 

@@ -1,0 +1,25 @@
+{
+  "checked_on": "2026-10-27",
+  "source_commit": "8f76a33b2e242fa888a37ab87f0ebbfdf8ea00eb",
+  "workflow_run": "https://github.com/jaewonlee021111/physical-ai-learning/actions/runs/40483176929",
+  "job_id": 122118311561,
+  "engine": "Chromium via Playwright 1.64.1",
+  "input": "synthetic; YOLO disabled for browser checks",
+  "passed": 3,
+  "failed": 0,
+  "widths": [
+    1280,
+    390
+  ],
+  "verified": [
+    "MJPEG displays",
+    "preprocessing UI changes server state",
+    "capture saves JPEG and displays thumbnail",
+    "XML node details",
+    "theme toggle",
+    "no horizontal overflow",
+    "SSE updates while log display pauses",
+    "no pageerror in desktop/mobile flow"
+  ],
+  "physical_camera_tested": false
+}

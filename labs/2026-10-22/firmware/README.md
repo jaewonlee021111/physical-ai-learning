@@ -30,6 +30,9 @@ Tera Term은 Windows 시리얼 터미널이다. macOS/Linux에서는 PlatformIO 
 
 ## 실제 검증 범위
 
-이 실행 환경에는 USB 보드가 없다. 업로드·LED 점멸·시리얼 수신을 완료로 표시하지 않는다. 빌드는 시도했으나 플랫폼 도구 다운로드 오류 때문에 완료하지 못했다. 결과와 정리한 오류는 [build-status.json](../evidence/build-status.json)에 있다.
+이 실행 환경에는 USB 보드가 없다. 업로드·LED 점멸·시리얼 수신을 완료로 표시하지 않는다. 10/27 GitHub Actions에서 UNO·ESP32S3 모두 컴파일에 성공했다. 로컬 환경의 다운로드 제한과 분리하여 원격 검사 결과를 남겼다. 성공 결과·실행 링크·메모리 사용량은 [build-status.json](../evidence/build-status.json)에 있다.
 
 공식 자료: [PlatformIO XIAO ESP32S3](https://docs.platformio.org/en/latest/boards/espressif32/seeed_xiao_esp32s3.html), [PlatformIO UNO](https://docs.platformio.org/en/latest/boards/atmelavr/uno.html), [Tera Term](https://teratermproject.github.io/index-en.html), [WCH CH341 드라이버](https://www.wch-ic.com/downloads/CH341SER_EXE.html).
+
+
+SevSeg 의존성은 실제 빌드에서 잘못된 소유자 이름을 발견해 공식 등록 이름 `deanisme/SevSeg@3.7.2`로 수정했다. [공식 등록 정보](https://registry.platformio.org/libraries/deanisme/SevSeg)를 대조했다.
