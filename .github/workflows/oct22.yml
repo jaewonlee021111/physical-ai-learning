@@ -37,6 +37,29 @@ jobs:
       - run: python3 -m pip install platformio==6.2.0
       - run: python3 -m platformio run -d labs/2026-10-22/firmware/${{ matrix.board }}
 
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: python3 -m pip install -r labs/2026-10-22/vision/requirements.txt
+      - run: npm ci
+        working-directory: labs/2026-10-22/vision/ui
+      - run: npx playwright install --with-deps chromium
+        working-directory: labs/2026-10-22/vision/ui
+      - run: npm test
+        working-directory: labs/2026-10-22/vision/ui
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: oct22-browser-evidence
+          path: |
+            labs/2026-10-22/vision/ui/results.json
+            labs/2026-10-22/vision/ui/screenshots/
+          retention-days: 7
+
   portfolio:
     runs-on: ubuntu-latest
     timeout-minutes: 10

@@ -5,3 +5,8 @@ vision/*_openvino_model/
 .venv/
 .pio/
 __pycache__/
+vision/ui/node_modules/
+vision/ui/test-results/
+vision/ui/results.json
+vision/ui/screenshots/
+
