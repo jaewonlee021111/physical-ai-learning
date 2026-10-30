@@ -1,0 +1,12 @@
+# 출처와 확인 범위
+
+확인일: 2026-10-30 (한국 시간).
+
+- [공식 교육 사이트](https://zeusk302-png.github.io/kdigital-physical-ai/#/)
+- [공개 원본 고정 버전](https://github.com/zeusk302-png/kdigital-physical-ai/tree/230ace2f78e141f8ae255f551770ef843226abfc): assets/sessions/의 날짜별 JSON 10개에서 주제·목표·제출물·개념 단원을 확인했다.
+- 10/29 P01 README·CODE-WALKTHROUGH, 10/30 PROJECT-HANDBOOK을 추가로 읽어 통신·실패 상태·개발 산출물 범위를 확인했다.
+- [기존 학습 저장소 기준](https://github.com/jaewonlee021111/physical-ai-learning/tree/0374e0c938ebfeba542f0220f650bc298d3fb4c9): 기존 코드·README·검증 기록을 연결했다. 10/23 녹화 기반 ESP32 구현과 현재 공개 UNO 교안은 범위가 다르다.
+
+이번 갱신은 교육 내용과 적용 설계 정리다. 신규 P01 프로그램·로봇 제어 코드·실물 시험 결과를 생성한 작업은 아니다. 새 문서의 로컬 링크와 JSON 구문을 검사했다. 기존 코드 검사를 전부 다시 실행하지 않았다.
+
+교시별 시간표는 넣지 않았다. 비공개 녹화 URL·암호·전체 자막·수강생 개인정보는 추가하지 않았다. 10/27 녹화 미확인 및 공개 자료가 없는 날짜는 임의로 채우지 않았다.

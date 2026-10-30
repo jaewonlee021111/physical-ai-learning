@@ -1,0 +1,619 @@
+{
+  "checked_on": "2026-10-30",
+  "source_repository_commit": "230ace2f78e141f8ae255f551770ef843226abfc",
+  "sessions": [
+    {
+      "date": "2026-10-08",
+      "topic": "데이터 기초, CSV/JSON",
+      "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-08",
+      "summary": "sessions/2026-10-08.md",
+      "deliverables": [
+        "A01~A08: 출처와 맥락, 자료 구조, 값의 의미와 자료형을 구별하고 이유를 적은 기록",
+        "A09~A12: 한 행의 기록 단위, 다섯 필드의 데이터 사전, 순서·키·계층의 차이 설명",
+        "A13~A20: CSV 세 행과 다섯 행, JSON 객체와 변환본, 코드를 읽고 예상 출력과 비교한 기록",
+        "A21~A24: 새 자료의 분류와 항목 사전, CSV 여섯 건·JSON 두 건, 검사 기록, 새 사례 문제 네 개의 답과 다음 담당자에게 전할 세 문장"
+      ],
+      "chapters": [],
+      "implementation_status": "existing_labs_see_validation"
+    },
+    {
+      "date": "2026-10-14",
+      "topic": "Python 기초",
+      "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-14",
+      "summary": "sessions/2026-10-14.md",
+      "deliverables": [
+        "18활동에서 예상한 결과, 그렇게 생각한 이유, 확인한 결과",
+        "수정한 코드 또는 문서, 직접 실행하거나 처리 순서를 적어 비교한 기록",
+        "종합 과제와 다음 사람이 따라 할 수 있는 사용 안내"
+      ],
+      "chapters": [
+        {
+          "id": "C01",
+          "title": "파일을 저장하고 실행하기"
+        },
+        {
+          "id": "C02",
+          "title": "print와 주석"
+        },
+        {
+          "id": "C03",
+          "title": "숫자·자료형·계산"
+        },
+        {
+          "id": "C04",
+          "title": "변수와 대입"
+        },
+        {
+          "id": "C05",
+          "title": "문자열과 출력 형식"
+        },
+        {
+          "id": "C06",
+          "title": "input과 형변환"
+        },
+        {
+          "id": "C07",
+          "title": "문자열 정리"
+        },
+        {
+          "id": "C08",
+          "title": "비교와 참·거짓"
+        },
+        {
+          "id": "C09",
+          "title": "if·else·elif 조건문"
+        },
+        {
+          "id": "C10",
+          "title": "리스트에 여러 값 담기"
+        },
+        {
+          "id": "C11",
+          "title": "for와 range 반복"
+        },
+        {
+          "id": "C12",
+          "title": "반복하며 합계·개수·평균 구하기"
+        },
+        {
+          "id": "C13",
+          "title": "딕셔너리와 이름으로 찾기"
+        },
+        {
+          "id": "C14",
+          "title": "while·break·continue"
+        },
+        {
+          "id": "C15",
+          "title": "잘못된 입력과 예외 처리"
+        },
+        {
+          "id": "C16",
+          "title": "함수·매개변수·return"
+        },
+        {
+          "id": "C17",
+          "title": "입력부터 요약까지 종합하기"
+        }
+      ],
+      "implementation_status": "existing_labs_see_validation"
+    },
+    {
+      "date": "2026-10-15",
+      "topic": "Python 심화",
+      "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-15",
+      "summary": "sessions/2026-10-15.md",
+      "deliverables": [
+        "18활동에서 예상한 결과, 그렇게 생각한 이유, 확인한 결과",
+        "수정한 코드 또는 문서, 직접 실행하거나 처리 순서를 적어 비교한 기록",
+        "종합 과제와 다음 사람이 따라 할 수 있는 사용 안내"
+      ],
+      "chapters": [
+        {
+          "id": "D01",
+          "title": "함수로 일을 나누고 결과 돌려받기"
+        },
+        {
+          "id": "D02",
+          "title": "함수 입력·기본값·변수의 범위"
+        },
+        {
+          "id": "D03",
+          "title": "여러 기록을 담는 구조와 원본 복사"
+        },
+        {
+          "id": "D04",
+          "title": "순서·번호·두 목록을 함께 처리하기"
+        },
+        {
+          "id": "D05",
+          "title": "입력 오류와 미측정 값을 구분하기"
+        },
+        {
+          "id": "D06",
+          "title": "파일 위치·텍스트 읽기·CSV 읽기"
+        },
+        {
+          "id": "D07",
+          "title": "CSV 저장과 다시 읽어서 확인하기"
+        },
+        {
+          "id": "D08",
+          "title": "JSON 구조·자료형·저장과 읽기"
+        },
+        {
+          "id": "D09",
+          "title": "중복·누락·잘못된 기록 따로 모으기"
+        },
+        {
+          "id": "D10",
+          "title": "항목별로 묶어서 합계·평균 구하기"
+        },
+        {
+          "id": "D11",
+          "title": "코드를 파일로 나누고 다시 사용하기"
+        },
+        {
+          "id": "D12",
+          "title": "CSV 검사에서 JSON 보고서까지 연결하기"
+        }
+      ],
+      "implementation_status": "existing_labs_see_validation"
+    },
+    {
+      "date": "2026-10-16",
+      "topic": "Git/GitHub",
+      "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-16",
+      "summary": "sessions/2026-10-16.md",
+      "deliverables": [
+        "프로필 주소",
+        "Python 작품 저장소·실행 안내",
+        "커밋·PR·짝 검토 기록"
+      ],
+      "chapters": [],
+      "implementation_status": "existing_labs_see_validation"
+    },
+    {
+      "date": "2026-10-20",
+      "topic": "AI 코드에이전트",
+      "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-20",
+      "summary": "sessions/2026-10-20.md",
+      "deliverables": [
+        "요구사항·설계·프로젝트 지침",
+        "대여·반납·저장 구현과 시험 기록",
+        "컨텍스트 인수인계 기록"
+      ],
+      "chapters": [
+        {
+          "id": "E01",
+          "title": "채팅과 코드 에이전트는 어떻게 다른가"
+        },
+        {
+          "id": "E02",
+          "title": "도구별 기능과 실행 환경"
+        },
+        {
+          "id": "E03",
+          "title": "VS Code에서 폴더와 실행 준비"
+        },
+        {
+          "id": "E04",
+          "title": "확장 설치·로그인·첫 질문"
+        },
+        {
+          "id": "E05",
+          "title": "설명·계획·수정·실행·검토를 나누기"
+        },
+        {
+          "id": "E06",
+          "title": "만들기 전에 요구사항 정하기"
+        },
+        {
+          "id": "E07",
+          "title": "화면·데이터·함수를 함께 설계하기"
+        },
+        {
+          "id": "E08",
+          "title": "잘 수행할 수 있는 작업 요청 만들기"
+        },
+        {
+          "id": "E09",
+          "title": "컨텍스트를 고르고 작업을 이어 가기"
+        },
+        {
+          "id": "E10",
+          "title": "README와 설계·작업 기록의 역할"
+        },
+        {
+          "id": "E11",
+          "title": "AGENTS.md와 도구별 지침 파일"
+        },
+        {
+          "id": "E12",
+          "title": "Skill로 반복 작업 절차 만들기"
+        },
+        {
+          "id": "E13",
+          "title": "확장·플러그인·Hook·MCP 구별하기"
+        },
+        {
+          "id": "E14",
+          "title": "MCP로 외부 문서 도구 연결하기"
+        },
+        {
+          "id": "E15",
+          "title": "diff·테스트·오류 재현으로 검토하기"
+        },
+        {
+          "id": "E16",
+          "title": "변경 요청을 나누고 다음 작업 전달하기"
+        }
+      ],
+      "implementation_status": "existing_labs_see_validation"
+    },
+    {
+      "date": "2026-10-21",
+      "topic": "HTML/CSS/React/MCP",
+      "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-21",
+      "summary": "sessions/2026-10-21.md",
+      "deliverables": [
+        "개인 랜딩페이지 공개 URL·GitHub 저장소",
+        "팀 검수 피드백과 수정 전후 기록",
+        "Notion MCP 읽기 호출 확인 기록",
+        "마지막 배포 커밋·실행 안내·모바일 화면"
+      ],
+      "chapters": [
+        {
+          "id": "W01",
+          "title": "방문자와 목적부터 기획하기"
+        },
+        {
+          "id": "W02",
+          "title": "폴더·파일·브라우저와 실행 준비"
+        },
+        {
+          "id": "W03",
+          "title": "HTML로 의미 있는 내용과 길 만들기"
+        },
+        {
+          "id": "W04",
+          "title": "CSS의 선택자·박스·색과 글자"
+        },
+        {
+          "id": "W05",
+          "title": "Flex·Grid와 반응형 화면"
+        },
+        {
+          "id": "W06",
+          "title": "JavaScript로 메뉴와 문의 검사 연결"
+        },
+        {
+          "id": "W07",
+          "title": "React를 처음 만나는 사람을 위한 부품과 JSX"
+        },
+        {
+          "id": "W08",
+          "title": "state로 화면을 바꾸고 폼 비교하기"
+        },
+        {
+          "id": "W09",
+          "title": "AI에게 작업을 나눠 맡기고 변경 확인하기"
+        },
+        {
+          "id": "W10",
+          "title": "GitHub Pages에 처음 배포하기"
+        },
+        {
+          "id": "W11",
+          "title": "Notion 팀 문서 만들고 MCP 연결하기"
+        },
+        {
+          "id": "W12",
+          "title": "팀 피드백을 읽고 수정 작업으로 바꾸기"
+        },
+        {
+          "id": "W13",
+          "title": "배포 오류를 고치고 수정본 다시 공개하기"
+        }
+      ],
+      "implementation_status": "existing_labs_see_validation"
+    },
+    {
+      "date": "2026-10-22",
+      "topic": "OpenCV + 웹캠 실습",
+      "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-22",
+      "summary": "sessions/2026-10-22.md",
+      "deliverables": [
+        "실행 가능한 개인 웹캠 Python 프로그램",
+        "직접 작성한 필터·알림 또는 집계 기능",
+        "정상·실패·속도 비교 기록",
+        "Git 원본·실행 README·실제 수행 구분"
+      ],
+      "chapters": [
+        {
+          "id": "V01",
+          "title": "설치·폴더·가상환경과 웹캠 준비"
+        },
+        {
+          "id": "V02",
+          "title": "웹캠 화면을 직접 띄우는 첫 프로그램"
+        },
+        {
+          "id": "V03",
+          "title": "키보드로 사진 저장하고 원본 확인하기"
+        },
+        {
+          "id": "V04",
+          "title": "YOLO 검출·박스·클래스·점수 읽기"
+        },
+        {
+          "id": "V05",
+          "title": "대상 필터와 검출 조건 직접 작성하기"
+        },
+        {
+          "id": "V06",
+          "title": "추적 ID와 프레임 사이 기억"
+        },
+        {
+          "id": "V07",
+          "title": "관심 구역 진입과 체류 알림"
+        },
+        {
+          "id": "V08",
+          "title": "방향별 선 통과 집계와 중복 처리"
+        },
+        {
+          "id": "V09",
+          "title": "결과 영상·사진·사건 기록 저장"
+        },
+        {
+          "id": "V10",
+          "title": "실패 장면과 처리 속도 비교"
+        },
+        {
+          "id": "V11",
+          "title": "AI 작업 지시·파일 구조·Git·팀 검수"
+        },
+        {
+          "id": "V12",
+          "title": "나의 웹캠 프로그램 완성과 재현"
+        }
+      ],
+      "implementation_status": "existing_labs_see_validation"
+    },
+    {
+      "date": "2026-10-23",
+      "topic": "전자회로·ESP32",
+      "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-23",
+      "summary": "sessions/2026-10-23.md",
+      "deliverables": [
+        "개인 배선 사진·실제 동작 기록",
+        "코드의 핀과 연결표를 설명한 기록",
+        "센서 한 개+출력 한 개를 연결한 개인 기능",
+        "실행한 부품·추가 준비가 필요한 부품 구분"
+      ],
+      "chapters": [
+        {
+          "id": "K00",
+          "title": "처음 연결 · 설치와 업로드"
+        },
+        {
+          "id": "K01",
+          "title": "빵판 읽기 · 저항과 LED"
+        },
+        {
+          "id": "K02",
+          "title": "택트 스위치 · 누르면 값 바꾸기"
+        },
+        {
+          "id": "K03",
+          "title": "세 가지 LED · 신호등 만들기"
+        },
+        {
+          "id": "K04",
+          "title": "가변저항 · 손잡이를 숫자로 읽기"
+        },
+        {
+          "id": "K05",
+          "title": "조도 센서 · 밝기와 저항"
+        },
+        {
+          "id": "K06",
+          "title": "볼 스위치 · 기울기 감지"
+        },
+        {
+          "id": "K07",
+          "title": "수위 센서 · 젖는 면적 비교"
+        },
+        {
+          "id": "K08",
+          "title": "소리 모듈 · 감도와 기준"
+        },
+        {
+          "id": "K09",
+          "title": "DHT11 · 온도와 습도"
+        },
+        {
+          "id": "K10",
+          "title": "LM35DZ · 전압을 섭씨로"
+        },
+        {
+          "id": "K11",
+          "title": "RGB LED · 세 가지 빛 섞기"
+        },
+        {
+          "id": "K12",
+          "title": "부저 · 짧은 소리 만들기"
+        },
+        {
+          "id": "K13",
+          "title": "조이스틱 · X·Y·누름 읽기"
+        },
+        {
+          "id": "K14",
+          "title": "4×4 키패드 · 행과 열"
+        },
+        {
+          "id": "K15",
+          "title": "LCD1602 · 화면에 값 보여 주기"
+        },
+        {
+          "id": "K16",
+          "title": "적외선 리모컨 · 버튼 코드 읽기"
+        },
+        {
+          "id": "K17",
+          "title": "RTC · 껐다 켜도 시간 기억"
+        },
+        {
+          "id": "K18",
+          "title": "서보모터 · 각도 지정"
+        },
+        {
+          "id": "K19",
+          "title": "스텝모터 · 드라이버로 순서 제어"
+        },
+        {
+          "id": "K20",
+          "title": "릴레이 · LED 회로를 접점으로 끊기"
+        },
+        {
+          "id": "K21",
+          "title": "1자리 FND · 숫자 표시"
+        },
+        {
+          "id": "K22",
+          "title": "4자리 FND · 빠르게 번갈아 켜기"
+        },
+        {
+          "id": "K23",
+          "title": "74HC595 · 선 세 개로 출력 늘리기"
+        },
+        {
+          "id": "K24",
+          "title": "도트매트릭스 · 한 점과 핀 지도"
+        },
+        {
+          "id": "K25",
+          "title": "RFID · 카드와 열쇠고리 읽기"
+        },
+        {
+          "id": "K26",
+          "title": "2핀 화염 소자 · 빛 변화와 모델 확인"
+        },
+        {
+          "id": "K27",
+          "title": "전원·케이블·정리"
+        }
+      ],
+      "implementation_status": "existing_labs_see_validation"
+    },
+    {
+      "date": "2026-10-29",
+      "topic": "웹 대시보드",
+      "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-29",
+      "summary": "sessions/2026-10-29.md",
+      "deliverables": [
+        "사용자·과업·적용 기준과 확인 방법이 담긴 개인 스케치",
+        "P01 기반 개인 대시보드 코드 ZIP",
+        "정상·실패 확인표와 실행 README"
+      ],
+      "chapters": [
+        {
+          "id": "D03",
+          "title": "표준을 화면에 적용하기"
+        },
+        {
+          "id": "D02",
+          "title": "정보·단위·색·피드백의 원칙"
+        },
+        {
+          "id": "D01",
+          "title": "좋은 대시보드는 어떤 판단을 돕나"
+        },
+        {
+          "id": "D04",
+          "title": "Claude Design과 Figma MCP로 빠르게 다듬기"
+        },
+        {
+          "id": "D05",
+          "title": "내 아이디어를 한 장으로 스케치"
+        },
+        {
+          "id": "D06",
+          "title": "공통 연결 · 센서에서 웹으로, 웹에서 LED로"
+        },
+        {
+          "id": "D07",
+          "title": "값과 명령을 읽고 화면을 고치기"
+        },
+        {
+          "id": "D08",
+          "title": "개인 제작 · 내 목적의 화면 완성"
+        },
+        {
+          "id": "D09",
+          "title": "자기 점검·고장 상황·복구"
+        },
+        {
+          "id": "D10",
+          "title": "개인 제출과 다음 프로젝트로 연결"
+        }
+      ],
+      "implementation_status": "summary_and_design_only"
+    },
+    {
+      "date": "2026-10-30",
+      "topic": "프로젝트 기획",
+      "source": "https://zeusk302-png.github.io/kdigital-physical-ai/#/sessions/2026-10-30",
+      "summary": "sessions/2026-10-30.md",
+      "deliverables": [
+        "문제·범위·역할·요구·설계·작업·시험·인계를 연결한 개인 기획안",
+        "핵심 기능의 실제 확인 또는 막힘·미확인을 구별한 기록",
+        "실행 원본과 다음 개발 작업 지시"
+      ],
+      "chapters": [
+        {
+          "id": "R01",
+          "title": "프로젝트·목표·범위·의사결정"
+        },
+        {
+          "id": "R02",
+          "title": "팀 구성·역할·RACI·Scrum 책임"
+        },
+        {
+          "id": "R03",
+          "title": "개발 과정·작업·협업·완료 기준"
+        },
+        {
+          "id": "R04",
+          "title": "실무 표준의 정의·범위·내용"
+        },
+        {
+          "id": "R05",
+          "title": "산출물의 목적·내용·작성 예"
+        },
+        {
+          "id": "R06",
+          "title": "추적성·변경·결정·위험"
+        },
+        {
+          "id": "R07",
+          "title": "기술 검증·시험·증거"
+        },
+        {
+          "id": "R08",
+          "title": "검토·배포·인수·인수인계"
+        }
+      ],
+      "implementation_status": "summary_and_design_only"
+    }
+  ],
+  "supplemental_dates": [
+    "2026-10-26"
+  ],
+  "unverified_dates": [
+    "2026-10-27",
+    "2026-10-28"
+  ]
+}
