@@ -611,11 +611,10 @@
   ],
   "supplemental_dates": [
     "2026-10-26",
+    "2026-10-27",
     "2026-10-28"
   ],
-  "unverified_dates": [
-    "2026-10-27"
-  ],
+  "unverified_dates": [],
   "recording_supplements": [
     {
       "date": "2026-10-28",
@@ -624,6 +623,14 @@
       "lab": "../labs/2026-10-28/README.md",
       "source_type": "user_provided_zoom_transcript_chat_and_key_frames",
       "implementation_status": "tools_tested_firmware_source_unbuilt_cloud_training_and_hardware_not_run"
+    },
+    {
+      "date": "2026-10-27",
+      "topic": "MQTT·FastAPI·JWT·이미지 수집",
+      "summary": "sessions/2026-10-27.md",
+      "lab": "../labs/2026-10-27/README.md",
+      "source_type": "user_provided_zoom_transcript_chat_and_selected_frame",
+      "implementation_status": "12_software_tests_passed_firmware_unbuilt_hardware_and_cloud_not_run"
     }
   ]
 }

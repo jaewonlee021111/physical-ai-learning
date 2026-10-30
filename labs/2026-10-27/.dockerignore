@@ -1,0 +1,5 @@
+.env
+runtime
+firmware
+__pycache__
+.pytest_cache

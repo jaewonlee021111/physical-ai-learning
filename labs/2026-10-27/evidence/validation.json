@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-10-30",
+  "python": "3.12",
+  "command": "python -m pytest tests -q",
+  "result": {
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 1
+  },
+  "mqtt_broker": "AMQTT 0.12.1 local TCP; simulated board using Paho",
+  "camera": "local HTTP JPEG fixture, not actual camera",
+  "api": "ASGI TestClient; SQLite persistence and authorization",
+  "javascript_syntax_checked": [
+    "web/learning.html",
+    "web/collector.html",
+    "web/index.html"
+  ],
+  "not_run": [
+    "physical ESP32 touch/LED/camera",
+    "firmware compile completion and upload",
+    "Supabase PostgreSQL connection",
+    "Docker build",
+    "Render/Vercel deployment",
+    "mobile LTE control",
+    "browser UI interaction",
+    "Edge Impulse training"
+  ],
+  "firmware_build": "attempted; platform tooling preparation did not complete"
+}

@@ -1,0 +1,22 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>27일 API·IoT 실습</title>
+<style>body{font:17px system-ui;background:#f3f6fb;color:#142539;max-width:1000px;margin:auto;padding:24px}section{background:white;border:1px solid #ccd8e5;padding:20px;border-radius:14px;margin:18px 0}input,button{font:inherit;padding:10px;margin:4px;max-width:90%}button{cursor:pointer;background:#164e86;color:white;border:0;border-radius:6px}pre{white-space:pre-wrap;overflow-wrap:anywhere}label{display:inline-block}a{color:#164e86}</style>
+<h1>API와 IoT 실습실</h1><p>실제 서버 요청 결과를 확인한다. 보드 미연결과 명령 대기를 성공으로 표시하지 않는다.</p><nav><a href="learning.html">용어·퀴즈·오답</a> · <a href="/docs">Swagger API</a></nav>
+<section><h2>계정</h2><label>이메일 <input id="email" type="email" autocomplete="username"></label><label>비밀번호 <input id="password" type="password" autocomplete="current-password"></label><button id="signup">가입</button><button id="login">로그인</button><button id="logout">로그아웃</button><p id="account" role="status">로그인 안 됨</p></section>
+<section><h2>내 아이템</h2><label>이름 <input id="name" value="콜라"></label><label>설명 <input id="description" value="350ml"></label><label>가격 <input id="price" type="number" min="0" value="2500"></label><button id="create">생성 POST</button><button id="list">조회 GET</button><p><label>수정·삭제할 내 ID <input id="itemid"></label><button id="patch">일부 수정 PATCH</button><button id="put">전체 교체 PUT</button><button id="delete">삭제 DELETE</button></p><pre id="items"></pre></section>
+<section><h2>내 보드와 명령</h2><label>보드 이름 <input id="devname" value="XIAO"></label><button id="register">보드 등록</button><button id="devices">상태 조회</button><p>등록 결과의 device_key는 한 번만 표시된다. 본인 보드 설정에 저장하고 공유하지 않는다.</p><label>보드 ID <input id="deviceid"></label><button id="on">LED 켜기 요청</button><button id="off">LED 끄기 요청</button><button id="commands">명령·ACK 조회</button><pre id="board"></pre></section>
+<section><h2>요청 결과</h2><pre id="result" role="status">아직 실행하지 않음</pre></section>
+<script src="config.js"></script>
+<script>
+let token='';const API_BASE=window.API_BASE||'';const $=id=>document.getElementById(id);const show=(id,data)=>$(id).textContent=JSON.stringify(data,null,2);
+async function request(path,method='GET',data,form=false){const headers={};if(token)headers.Authorization='Bearer '+token;if(data)headers['Content-Type']=form?'application/x-www-form-urlencoded':'application/json';const r=await fetch(API_BASE+'/api/v1'+path,{method,headers,body:data?(form?new URLSearchParams(data):JSON.stringify(data)):undefined});const body=r.status===204?{deleted:true}:await r.json();show('result',{status:r.status,body});if(!r.ok)throw Error('HTTP '+r.status);return body;}
+function bind(id,fn){$(id).onclick=()=>Promise.resolve().then(fn).catch(e=>{$('result').textContent+='\n'+e.message;});}
+bind('signup',()=>request('/auth/signup','POST',{email:$('email').value,password:$('password').value}));
+bind('login',async()=>{const r=await request('/auth/token','POST',{username:$('email').value,password:$('password').value},true);token=r.access_token;$('password').value='';$('account').textContent='로그인됨: '+$('email').value;$('result').textContent='로그인 성공 · 토큰은 현재 페이지 메모리에만 보관';});
+bind('logout',()=>{token='';$('account').textContent='로그인 안 됨';$('items').textContent='';$('board').textContent='';$('result').textContent='현재 페이지 토큰 제거. 발급 토큰의 서버 만료 시간은 별도다.';});
+const item=()=>({name:$('name').value,description:$('description').value,price:Number($('price').value)});
+bind('create',async()=>{const r=await request('/items','POST',item());$('itemid').value=r.id;show('items',r);});bind('list',async()=>show('items',await request('/items')));
+bind('patch',async()=>show('items',await request('/items/'+encodeURIComponent($('itemid').value),'PATCH',{name:$('name').value})));bind('put',async()=>show('items',await request('/items/'+encodeURIComponent($('itemid').value),'PUT',item())));bind('delete',()=>request('/items/'+encodeURIComponent($('itemid').value),'DELETE'));
+bind('register',async()=>{const r=await request('/devices','POST',{name:$('devname').value});$('deviceid').value=r.id;show('board',r);});bind('devices',async()=>show('board',await request('/devices')));
+for(const [id,led]of [['on',true],['off',false]])bind(id,async()=>show('board',await request('/devices/'+encodeURIComponent($('deviceid').value)+'/commands','POST',{led})));
+bind('commands',async()=>show('board',await request('/devices/'+encodeURIComponent($('deviceid').value)+'/commands')));
+</script></html>
