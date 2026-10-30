@@ -1,0 +1,5 @@
+runtime/
+__pycache__/
+.env
+firmware/edge_camera/secrets.h
+firmware/edge_camera/*_inferencing.h

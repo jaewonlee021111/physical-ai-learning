@@ -1,0 +1,58 @@
+{
+  "scope": "disposable local repo; no GitHub PR created by this script",
+  "passed": true,
+  "commands": [
+    {
+      "command": "git init -b main",
+      "output": "Initialized empty Git repository in /tmp/oct28-git-v322631a/.git/"
+    },
+    {
+      "command": "git config user.name Local Practice",
+      "output": ""
+    },
+    {
+      "command": "git config user.email practice@example.invalid",
+      "output": ""
+    },
+    {
+      "command": "git add README.md",
+      "output": ""
+    },
+    {
+      "command": "git commit -m Create team layout",
+      "output": "[main (root-commit) bc1153f] Create team layout\n 1 file changed, 1 insertion(+)\n create mode 100644 README.md"
+    },
+    {
+      "command": "git switch -c member2/football",
+      "output": ""
+    },
+    {
+      "command": "git add members/member2/index.html",
+      "output": ""
+    },
+    {
+      "command": "git commit -m Add member2 football hobby",
+      "output": "[member2/football 2f251e3] Add member2 football hobby\n 1 file changed, 1 insertion(+)\n create mode 100644 members/member2/index.html"
+    },
+    {
+      "command": "git diff main...HEAD --stat",
+      "output": "members/member2/index.html | 1 +\n 1 file changed, 1 insertion(+)"
+    },
+    {
+      "command": "git switch main",
+      "output": ""
+    },
+    {
+      "command": "git merge --no-ff member2/football -m Review and merge local practice",
+      "output": "Merge made by the 'ort' strategy.\n members/member2/index.html | 1 +\n 1 file changed, 1 insertion(+)\n create mode 100644 members/member2/index.html"
+    },
+    {
+      "command": "git log --oneline --all --graph",
+      "output": "*   5204744 Review and merge local practice\n|\\  \n| * 2f251e3 Add member2 football hobby\n|/  \n* bc1153f Create team layout"
+    },
+    {
+      "command": "git status --porcelain",
+      "output": ""
+    }
+  ]
+}

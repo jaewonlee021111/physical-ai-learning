@@ -1,0 +1,11 @@
+{
+  "checked_on": "2026-10-30",
+  "python": "3.12.14",
+  "test_command": "python -m unittest discover -s labs/2026-10-28/tests -v",
+  "exit_code": 0,
+  "output": "test_capture_over_real_local_http (test_tools.DatasetTests.test_capture_over_real_local_http) ... ok\ntest_corrupt_and_empty (test_tools.DatasetTests.test_corrupt_and_empty) ... ok\ntest_duplicate_leakage (test_tools.DatasetTests.test_duplicate_leakage) ... ok\ntest_label_conflict (test_tools.DatasetTests.test_label_conflict) ... ok\ntest_missing_test_session (test_tools.DatasetTests.test_missing_test_session) ... ok\ntest_path_traversal (test_tools.DatasetTests.test_path_traversal) ... ok\ntest_session_split (test_tools.DatasetTests.test_session_split) ... ok\ntest_bad_probability_sum (test_tools.EvaluationTests.test_bad_probability_sum) ... ok\ntest_duplicates_and_label_mismatch (test_tools.EvaluationTests.test_duplicates_and_label_mismatch) ... ok\ntest_matrix_and_macro_f1 (test_tools.EvaluationTests.test_matrix_and_macro_f1) ... ok\ntest_nan_and_empty (test_tools.EvaluationTests.test_nan_and_empty) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.549s\n\nOK\n",
+  "fixtures": "generated test images; not lecture photographs or trained model results",
+  "firmware": "NOT_BUILT: exported Edge Impulse model library unavailable",
+  "edge_impulse_training": "NOT_RUN: user dataset/project credentials unavailable",
+  "hardware": "NOT_RUN: no connected ESP32 or Raspberry Pi"
+}

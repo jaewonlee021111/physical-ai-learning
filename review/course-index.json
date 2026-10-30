@@ -610,10 +610,20 @@
     }
   ],
   "supplemental_dates": [
-    "2026-10-26"
+    "2026-10-26",
+    "2026-10-28"
   ],
   "unverified_dates": [
-    "2026-10-27",
-    "2026-10-28"
+    "2026-10-27"
+  ],
+  "recording_supplements": [
+    {
+      "date": "2026-10-28",
+      "topic": "Edge AI 이미지 분류·팀 협업·라즈베리파이",
+      "summary": "sessions/2026-10-28.md",
+      "lab": "../labs/2026-10-28/README.md",
+      "source_type": "user_provided_zoom_transcript_chat_and_key_frames",
+      "implementation_status": "tools_tested_firmware_source_unbuilt_cloud_training_and_hardware_not_run"
+    }
   ]
 }

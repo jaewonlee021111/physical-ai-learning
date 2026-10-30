@@ -1,0 +1,3 @@
+#pragma once
+#define WIFI_SSID "YOUR_2_4_GHZ_SSID"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
